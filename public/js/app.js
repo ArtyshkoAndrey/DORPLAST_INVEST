@@ -22,6 +22,7 @@ __webpack_require__.r(__webpack_exports__);
 window._ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
 
 window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+window.$ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),

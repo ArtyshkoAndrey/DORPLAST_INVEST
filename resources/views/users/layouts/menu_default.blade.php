@@ -34,32 +34,31 @@
       </div>
     </div>
   </div>
-  <div class="container-xxl container-md my-2 mx-2 mx-xxl-auto mx-md-auto collapse navbar-collapse" id="menu-links">
-   <div class="row gx-4">
-     <div class="col-auto">
-       <a href="" class="nav-link px-0">О компании</a>
-     </div>
-     <div class="col-auto">
-       <a href="" class="nav-link px-0">Услуги</a>
-     </div>
-     <div class="col-auto">
-       <a href="" class="nav-link px-0">Производство</a>
-     </div>
-     <div class="col-auto">
-       <a href="" class="nav-link px-0">Продукция</a>
-     </div>
-     <div class="col-auto">
-       <a href="" class="nav-link px-0">Галерея</a>
-     </div>
-     <div class="col-auto">
-       <a href="" class="nav-link px-0">Статьи</a>
-     </div>
-     <div class="col-auto">
-       <a href="" class="nav-link px-0">Контакты</a>
-     </div>
-   </div>
+  <div class="container-fluid collapse navbar-collapse" id="menu-links">
+    <div class="container-xxl container-md my-2 mx-2 mx-xxl-auto mx-md-auto mb-0">
+      <div class="row gx-4">
+        <div class="col-auto">
+          <a href="" class="nav-link px-0">О компании</a>
+        </div>
+        <div class="col-auto">
+          <a href="" class="nav-link px-0">Услуги</a>
+        </div>
+        <div class="col-auto">
+          <a href="" class="nav-link px-0">Производство</a>
+        </div>
+        <div class="col-auto">
+          <a href="" class="nav-link px-0">Продукция</a>
+        </div>
+        <div class="col-auto">
+          <a href="" class="nav-link px-0">Галерея</a>
+        </div>
+        <div class="col-auto">
+          <a href="" class="nav-link px-0">Статьи</a>
+        </div>
+        <div class="col-auto">
+          <a href="" class="nav-link px-0">Контакты</a>
+        </div>
+      </div>
+    </div>
   </div>
 </nav>
-
-<hr>
-

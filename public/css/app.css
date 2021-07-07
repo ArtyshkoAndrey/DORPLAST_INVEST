@@ -11205,6 +11205,20 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.navbar #menu-links {
+  border-bottom: 1px solid #adb5bd;
+  padding-bottom: 0;
+}
+.navbar #menu-links a {
+  color: #adb5bd;
+  margin-bottom: -1px;
+}
+.navbar #menu-links a:hover, .navbar #menu-links a.active {
+  color: #000;
+}
+.navbar #menu-links a.active {
+  border-bottom: 2px solid #2983EE;
+}
 .navbar .navbar-toggler {
   border: none;
   border-radius: 100%;

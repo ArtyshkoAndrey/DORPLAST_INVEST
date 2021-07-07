@@ -9,6 +9,23 @@
     }
   }
 
+  #menu-links {
+    border-bottom: 1px solid $gray-500;
+    padding-bottom: 0;
+    a {
+      color: $gray-500;
+      margin-bottom: -1px;
+
+      &:hover, &.active {
+        color: $black;
+      }
+
+      &.active {
+        border-bottom: 2px solid $primary;
+      }
+    }
+  }
+
 
   .navbar-toggler {
     border: none;
