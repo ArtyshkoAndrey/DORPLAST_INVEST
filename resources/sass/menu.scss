@@ -1,4 +1,50 @@
 .navbar {
+  *, .btn {
+    font-size: 16px !important;
+  }
+
+  .collapse:not(.show) {
+    @include respond-up(lg) {
+      display: none!important;
+    }
+  }
+
+
+  .navbar-toggler {
+    border: none;
+    border-radius: 100%;
+    background-color: $primary;
+    height: 40px;
+    width: 40px;
+
+    &.collapsed {
+      > .navbar-toggler-icon {
+        width: 100%;
+        background-image: url("/public/img/arrow_menu/arrow.svg") !important;
+      }
+    }
+
+    > .navbar-toggler-icon {
+      width: 100%;
+      background-image: url("/public/img/arrow_menu/x_arrow.svg") !important;
+
+      @include respond-to(md) {
+        width: 80%;
+      }
+    }
+
+    @include respond-to(md) {
+      height: 50px;
+      width: 50px;
+    }
+  }
+
+
+  //
+  //@include respond-to(lg) {
+  //  font-size: 18px!important;
+  //}
+
   .navbar-brand {
     line-height: 1em;
   }
