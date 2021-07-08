@@ -3,6 +3,14 @@
     font-size: 16px !important;
   }
 
+  @include respond-to(md) {
+    border-bottom: 1px solid #cfd4db;
+  }
+
+  @include respond-to(lg) {
+    border-bottom: none
+  }
+
   .collapse:not(.show) {
     @include respond-up(lg) {
       display: none!important;
@@ -22,12 +30,12 @@
     }
 
     @include respond-to(lg) {
-      border-color: $gray-500;
+      border-color: #cfd4db;
     }
 
     a {
       position: relative;
-      color: $gray-500;
+      color: $secondary;
 
       &:hover, &.active {
         color: $black;
@@ -54,7 +62,7 @@
     }
   }
 
-  #secondary-mobile-links {
+  #secondary-mobile-links,  {
     a {
       color: $black;
     }

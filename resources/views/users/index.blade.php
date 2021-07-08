@@ -4,6 +4,16 @@
 
 @section('body')
 
+  <section class="container-md pt-1 pt-md-3 pt-md-5">
+    <div class="row justify-content-center">
+      <div class="col-12 px-0 px-md-3">
+        <img src="{{ asset('img/dorplast-big-min.png') }}"
+             class="img-fluid w-100"
+             alt="dorplast Инвест">
+      </div>
+    </div>
+  </section>
+
 @endsection
 
 @section('js')

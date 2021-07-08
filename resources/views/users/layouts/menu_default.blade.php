@@ -11,13 +11,13 @@
       </div>
 
       <div class="col-auto ml-auto mt-lg-0 mt-md-4 d-none d-md-block order-md-last order-lg-2 border-end border-secondary">
-        <a href="#" class="nav-link ps-md-0">
+        <a href="mailto:info@dorplastinvest.kz" class="nav-link ps-md-0 text-dark">
           info@dorplastinvest.kz
         </a>
       </div>
 
       <div class="col-auto mt-lg-0 mt-md-4 d-none d-md-block order-md-last order-lg-3">
-        <a href="tel:+77273285441" class="nav-link">
+        <a href="tel:+77273285441" class="nav-link text-dark">
           +7(727) 328-54-41
         </a>
       </div>
@@ -62,7 +62,7 @@
       </div>
       <div class="row gx-0 d-block d-md-none" id="secondary-mobile-links">
         <div class="col-12 px-0">
-          <a href="#" class="nav-link px-0">
+          <a href="mailto:info@dorplastinvest.kz" class="nav-link px-0">
             info@dorplastinvest.kz
           </a>
         </div>
