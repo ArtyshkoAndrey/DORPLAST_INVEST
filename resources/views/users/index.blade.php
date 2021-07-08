@@ -9,9 +9,9 @@
 @section('js')
   <script>
     $(function() {
-      $('#menu-links a').on('click', function (e) {
+      $('#menu-links #links a').on('click', function (e) {
         e.preventDefault();
-        $('#menu-links a').removeClass('active')
+        $('#menu-links #links a').removeClass('active')
         $(this).toggleClass('active')
       })
     })

@@ -1,9 +1,9 @@
 <!-- As a link -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white d-block">
-  <div class="container-xxl container-md my-2 mx-2 mx-xxl-auto mx-md-auto">
+  <div class="container-xxl container-md my-2 mx-xxl-auto mx-md-auto justify-content-center">
     <div class="row w-100 align-items-center">
       {{--        Brand Name  --}}
-      <div class="col-lg-2 col-md-3 col-4 me-auto">
+      <div class="col-lg-2 col-md-3 col-5 me-auto">
         <a class="navbar-brand text-uppercase text-wrap fw-bolder d-flex"
            href="{{ route('index') }}">
           <img src="{{ asset('img/logo.svg') }}" alt="{{ config('app.name') }}" class="img-fluid">
@@ -17,7 +17,7 @@
       </div>
 
       <div class="col-auto mt-lg-0 mt-md-4 d-none d-md-block order-md-last order-lg-3">
-        <a href="#" class="nav-link">
+        <a href="tel:+77273285441" class="nav-link">
           +7(727) 328-54-41
         </a>
       </div>
@@ -35,8 +35,8 @@
     </div>
   </div>
   <div class="container-fluid collapse navbar-collapse" id="menu-links">
-    <div class="container-xxl container-md my-2 mx-2 mx-xxl-auto mx-md-auto mb-0">
-      <div class="row gx-4">
+    <div class="container-xxl container-md my-2 mx-0 mx-xxl-auto mx-md-auto mb-0">
+      <div class="row gx-0 gx-lg-4 flex-column flex-lg-row mx-0 mx-lg-1" id="links">
         <div class="col-auto">
           <a href="" class="nav-link px-0">О компании</a>
         </div>
@@ -58,7 +58,28 @@
         <div class="col-auto">
           <a href="" class="nav-link px-0">Контакты</a>
         </div>
+        <hr class="d-block d-md-none m-0">
       </div>
+      <div class="row gx-0 d-block d-md-none" id="secondary-mobile-links">
+        <div class="col-12 px-0">
+          <a href="#" class="nav-link px-0">
+            info@dorplastinvest.kz
+          </a>
+        </div>
+
+        <div class="col-12 px-0">
+          <a href="tel:+77273285441" class="nav-link px-0">
+            +7(727) 328-54-41
+          </a>
+        </div>
+
+        <div class="col-12 px-0">
+          <a href="#" class="btn btn-outline-gradient-primary d-block">
+            Получить  коммерческое предложение
+          </a>
+        </div>
+      </div>
+
     </div>
   </div>
 </nav>

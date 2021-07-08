@@ -11206,18 +11206,48 @@ textarea.form-control-lg {
   }
 }
 .navbar #menu-links {
-  border-bottom: 1px solid #adb5bd;
+  border-bottom: 1px solid transparent;
   padding-bottom: 0;
+  position: relative;
+}
+.navbar #menu-links hr {
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  bottom: 29%;
+}
+@media (min-width: 992px) {
+  .navbar #menu-links {
+    border-color: #adb5bd;
+  }
 }
 .navbar #menu-links a {
+  position: relative;
   color: #adb5bd;
-  margin-bottom: -1px;
 }
 .navbar #menu-links a:hover, .navbar #menu-links a.active {
   color: #000;
 }
-.navbar #menu-links a.active {
-  border-bottom: 2px solid #2983EE;
+@media (min-width: 992px) {
+  .navbar #menu-links a::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 1px;
+    height: 100%;
+    width: 46px;
+    left: calc(50% - 23px);
+    border-bottom: 2px solid transparent;
+  }
+  .navbar #menu-links a.active::after {
+    border-bottom: 2px solid #2983EE !important;
+  }
+}
+.navbar #secondary-mobile-links a {
+  color: #000;
+}
+.navbar #secondary-mobile-links a.btn.btn-outline-gradient-primary {
+  color: #2983EE;
 }
 .navbar .navbar-toggler {
   border: none;
@@ -11259,7 +11289,7 @@ textarea.form-control-lg {
   box-shadow: 2px 1000px 1px #fff inset;
 }
 .btn.btn-outline-gradient-primary:hover {
-  color: #fff;
+  color: #fff !important;
   background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(160deg, #89F1FF, #2983EE);
   box-shadow: 0px 6px 26px 0px rgba(41, 131, 238, 0.26);
 }
