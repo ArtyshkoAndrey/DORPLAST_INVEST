@@ -20,6 +20,10 @@ $theme-colors: (
 
 @import "bootstrap";
 
+.object-fit-cover {
+  object-fit: cover;
+}
+
 @import "./menu";
 @import "button/gradient-primary";
 

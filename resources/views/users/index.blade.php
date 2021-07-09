@@ -15,7 +15,7 @@
     </div>
   </section>
 
-  <section class="container-md section-landing pb-5"
+  <section class="container-md section-landing"
            id="second-about-section">
     <div class="row align-items-stretch">
       <div class="col-md-6">
@@ -30,7 +30,7 @@
             <a href="#!"
                class="btn btn-gradient-primary mt-3 px-4 py-2">
               Посмотреть продукцию
-              <span class="ps-5"> > </span>
+              <i class="icon-arrow-right-2 ps-5 h5"></i>
             </a>
           </div>
         </div>
@@ -47,10 +47,10 @@
                 <p>Являемся ведущим поставщиком элементов верхнего строения пути для предприятий АО «НК«КТЖ»</p>
               </div>
               <div class="carousel-item">
-                <p>Парк оборудования состоит  из 14 термопластавтоматов </p>
+                <p>Являемся ведущим поставщиком элементов верхнего строения пути для предприятий АО «НК«КТЖ» 2</p>
               </div>
               <div class="carousel-item">
-                <p>Непрерывное 3-х сменное производство</p>
+                <p>Являемся ведущим поставщиком элементов верхнего строения пути для предприятий АО «НК«КТЖ» 3</p>
               </div>
             </div>
           </div>
@@ -76,6 +76,63 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-lg section-landing pb-5"
+           id="third-info-section">
+    <div class="row gy-5 gx-5 align-items-stretch">
+      <div class="col-lg-6 col-md-8">
+
+        <div class="row item-info align-items-center">
+          <div class="col-3">
+            <img src="{{ asset('img/industrial.svg') }}"
+                 class="img-fluid w-100"
+                 alt="Оборудование">
+          </div>
+
+          <div class="col-sm-9">
+            <h4>Парк оборудования состоит из 14 термопластавтоматов</h4>
+            <p class="text-secondary mb-0">
+              с широким диапазоном возможностей по литью пластмасс (от 1 см3 до 3200 см3)
+            </p>
+          </div>
+        </div>
+
+        <div class="row item-info align-items-center">
+          <div class="col-3">
+            <img src="{{ asset('img/manufacture.svg') }}"
+                 class="img-fluid w-100"
+                 alt="Оборудование">
+          </div>
+
+          <div class="col-sm-9">
+            <h4>Непрерывное 3-х сменное производство</h4>
+            <p class="text-secondary mb-0">
+              отработанные связи с поставщиками сырья, постоянный контроль качества
+            </p>
+          </div>
+        </div>
+
+        <div class="row item-info align-items-center">
+          <div class="col-3">
+            <img src="{{ asset('img/warehouse.svg') }}"
+                 class="img-fluid w-100"
+                 alt="Оборудование">
+          </div>
+
+          <div class="col-sm-9">
+            <h4>15 000 м2 производственной и складской площади</h4>
+            <p class="text-secondary mb-0">
+              позволяет быстро и качественно производить полимерные изделия
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-6">
+        <img src="{{ asset('img/toSliderThird.jpg') }}" class="object-fit-cover w-100 h-100 rounded-3" alt="">
       </div>
     </div>
   </section>
