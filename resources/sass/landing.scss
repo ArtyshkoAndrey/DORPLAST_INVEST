@@ -46,6 +46,24 @@ section.section-landing {
   }
 
   #carouselSecondSection {
+
+    .carousel-number-arrow {
+      position: absolute;
+      bottom: 0;
+       color: $primary;
+
+      span:last-child {
+        //margin-left: 70px;
+      }
+      span:nth-child(2) {
+        width: 68px;
+        margin-left: 5px;
+        margin-right: 5px;
+        content: " ";
+        border-bottom: 1px solid $primary;
+      }
+    }
+
     .carousel-control-prev, .carousel-control-next {
       opacity: 1;
       padding: 0;

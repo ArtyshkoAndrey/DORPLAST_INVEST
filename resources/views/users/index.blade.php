@@ -25,14 +25,22 @@
           Являемся ведущим поставщиком элементов верхнего строения пути для предприятий АО «НК«КТЖ»
         </h2>
 
-        <a href="#!"
-           class="btn btn-gradient-primary mt-3 px-4 py-2 d-none d-md-block">
-          Посмотреть продукцию
-          <span class="ps-5"> > </span>
-        </a>
+        <div class="row d-none d-md-flex">
+          <div class="col-auto">
+            <a href="#!"
+               class="btn btn-gradient-primary mt-3 px-4 py-2">
+              Посмотреть продукцию
+              <span class="ps-5"> > </span>
+            </a>
+          </div>
+        </div>
       </div>
       <div class="col-md-6">
-        <div id="carouselSecondSection" class="carousel slide h-100 row mt-3 mt-md-0" data-bs-ride="carousel" data-bs-interval="false">
+        <div id="carouselSecondSection"
+             class="carousel slide h-100 row mt-3 mt-md-0"
+             data-bs-ride="carousel"
+             data-bs-interval="false"
+             data-bs-wrap="true">
           <div class="col-md-8 col-10 align-self-center">
             <div class="carousel-inner pb-4">
               <div class="carousel-item active">
@@ -46,12 +54,25 @@
               </div>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselSecondSection" data-bs-slide="prev">
-            <span class="icon-arrow-left text-primary display-6" aria-hidden="true"></span>
+          <div class="carousel-number-arrow d-flex align-items-center">
+            <span id="counterFromSliderSecondSection">1</span>
+            <span class="d-inline-block"></span>
+            <span>3</span>
+          </div>
+          <button class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselSecondSection"
+                  data-bs-slide="prev">
+            <span class="icon-arrow-left-3 text-primary display-6"
+                  aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselSecondSection" data-bs-slide="next">
-            <span class="icon-arrow-right text-primary display-6" aria-hidden="true"></span>
+          <button class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselSecondSection"
+                  data-bs-slide="next">
+            <span class="icon-arrow-right-3 text-primary display-6"
+                  aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
         </div>
@@ -68,6 +89,13 @@
         e.preventDefault();
         $('#menu-links #links a').removeClass('active')
         $(this).toggleClass('active')
+      })
+
+      let sliderSecondSection = document.getElementById('carouselSecondSection')
+      let counterFromSliderSecondSection = document.getElementById('counterFromSliderSecondSection')
+      sliderSecondSection.addEventListener('slid.bs.carousel', function (el) {
+        console.log(el.to)
+        counterFromSliderSecondSection.textContent = el.to + 1
       })
     })
   </script>
