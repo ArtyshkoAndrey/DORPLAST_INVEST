@@ -16,3 +16,20 @@
     box-shadow: 0px 6px 26px 0px rgba(41,131,238,0.26);
   }
 }
+
+.btn.btn-gradient-primary {
+  color: $white;
+  border-radius: 12px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(160deg, #75efff, #2983EE);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  -webkit-box-shadow: 0px 6px 26px 0px rgba(41,131,238,0.26);
+  -moz-box-shadow: 0px 6px 26px 0px rgba(41,131,238,0.26);
+  box-shadow: 0px 6px 26px 0px rgba(41,131,238,0.26);
+
+  &:hover {
+    -webkit-box-shadow: 0px 6px 26px 5px rgb(41 131 238 / 45%);
+    -moz-box-shadow: 0px 6px 26px 5px rgb(41 131 238 / 45%);
+    box-shadow: 0px 6px 26px 5px rgb(41 131 238 / 45%);
+  }
+}

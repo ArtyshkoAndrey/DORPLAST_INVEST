@@ -44,4 +44,31 @@ section.section-landing {
       font-size: 26px;
     }
   }
+
+  #carouselSecondSection {
+    .carousel-control-prev, .carousel-control-next {
+      opacity: 1;
+      padding: 0;
+      top: unset;
+      bottom: 0;
+      left: unset;
+      right: unset;
+    }
+
+    .carousel-control-next {
+      right: 0;
+    }
+    .carousel-control-prev {
+      right: 3rem;
+    }
+
+    .carousel-item {
+      color: $gray-text-slider;
+      font-size: 16px;
+
+      @include respond-to(lg) {
+        font-size: 18px;
+      }
+    }
+  }
 }
