@@ -3,7 +3,7 @@
 
 @import "node_modules/bootstrap/scss/functions";
 
-@import "node_modules/bootstrap/scss/variables";
+//@import "node_modules/bootstrap/scss/variables";
 @import "variables";
 @import "node_modules/bootstrap/scss/mixins";
 
@@ -18,7 +18,9 @@ $theme-colors: (
   "dark":       $dark
 ) !default;
 
-@import "~bootstrap/scss/bootstrap";
+@import "bootstrap";
 
 @import "./menu";
 @import "button/gradient-primary";
+
+@import "landing";
