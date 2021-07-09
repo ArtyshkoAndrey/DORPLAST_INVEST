@@ -82,7 +82,7 @@
 
   <section class="container-lg section-landing pb-5"
            id="third-info-section">
-    <div class="row gy-5 gx-5 align-items-stretch">
+    <div class="row gy-5 gx-lg-5 align-items-stretch">
       <div class="col-lg-6 col-md-8">
 
         <div class="row item-info align-items-center">
