@@ -162,8 +162,8 @@
     </div>
   </section>
 
-  <section class="container-md section-landing pb-5">
-    <div class="row">
+  <section class="container-md section-landing pb-5" id="four-future-section">
+    <div class="row px-3 py-5 px-md-5">
       <div class="col-lg-6">
         <div class="row">
           <div class="col-12">
@@ -203,6 +203,10 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="col-lg-6 position-relative">
+        <img src="{{ asset('img/Group 30.png') }}" class="img-fluid w-100" alt="Человек" id="people-info-img">
+        <div class="" id="union"></div>
       </div>
     </div>
   </section>

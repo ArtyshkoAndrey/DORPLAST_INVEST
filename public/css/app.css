@@ -11468,3 +11468,22 @@ section.section-landing {
     font-size: 32px;
   }
 }
+
+#four-future-section > .row {
+  background-color: #F7F9FB;
+  border-radius: 24px;
+}
+#four-future-section #people-info-img {
+  margin-top: 130px;
+}
+#four-future-section #union {
+  background-image: url("../img/Group 26.png");
+  content: " ";
+  display: block;
+  width: 285px;
+  height: 112px;
+  background-size: cover;
+  position: absolute;
+  top: 25px;
+  left: calc(50% - 142px);
+}
