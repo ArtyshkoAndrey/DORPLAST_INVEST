@@ -80,7 +80,7 @@
     </div>
   </section>
 
-  <section class="container-lg section-landing pb-5"
+  <section class="container-md section-landing"
            id="third-info-section">
     <div class="row gy-5 gx-lg-5 align-items-stretch">
       <div class="col-lg-6 col-md-8">
@@ -131,8 +131,78 @@
         </div>
 
       </div>
+      <div class="col-lg-6 px-0 px-md-4">
+
+        <div id="thirdCarouselSection" class="carousel slide h-100" data-bs-ride="carousel">
+          <div class="carousel-inner h-100">
+            <div class="carousel-item active">
+              <img src="{{ asset('img/toSliderThird.jpg') }}" class="object-fit-cover w-100 h-100" alt="">
+            </div>
+            <div class="carousel-item">
+              <img src="{{ asset('img/toSliderThird.jpg') }}" class="object-fit-cover w-100 h-100" alt="">
+            </div>
+            <div class="carousel-item">
+              <img src="{{ asset('img/toSliderThird.jpg') }}" class="object-fit-cover w-100 h-100" alt="">
+            </div>
+          </div>
+          <div class="wrapper-control">
+            <button class="carousel-control-prev" type="button" data-bs-target="#thirdCarouselSection" data-bs-slide="prev">
+            <span class="icon-arrow-left-3 text-primary"
+                  aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#thirdCarouselSection" data-bs-slide="next">
+            <span class="icon-arrow-right-3 text-primary"
+                  aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-md section-landing pb-5">
+    <div class="row">
       <div class="col-lg-6">
-        <img src="{{ asset('img/toSliderThird.jpg') }}" class="object-fit-cover w-100 h-100 rounded-3" alt="">
+        <div class="row">
+          <div class="col-12">
+            <p class="text-primary">Наша цель – это Ваш экономический успех!</p>
+          </div>
+
+          <div class="col-10">
+            <h4>Мы видим себя в качестве Вашего партнёра и консультанта.</h4>
+          </div>
+
+          <div class="col-11">
+            <div class="row align-items-center mt-3">
+              <div class="col-auto">
+                <img src="{{ asset('img/dot_list.svg') }}" class="img-fluid" alt="list">
+              </div>
+              <div class="col">
+                <p class="mb-0">Окажем Вам поддержку в выборе материалов при разработке конструкции изделий исполнения и инструмента</p>
+              </div>
+            </div>
+
+            <div class="row align-items-center mt-3">
+              <div class="col-auto">
+                <img src="{{ asset('img/dot_list.svg') }}" class="img-fluid" alt="list">
+              </div>
+              <div class="col">
+                <p class="mb-0">Совместно с Вами мы выработаем концепцию, какая технология и какое оборудование лучше всего подходит для Ваших производственных планов</p>
+              </div>
+            </div>
+
+            <div class="row align-items-center mt-3">
+              <div class="col-auto">
+                <img src="{{ asset('img/dot_list.svg') }}" class="img-fluid" alt="list">
+              </div>
+              <div class="col">
+                <p class="mb-0">Наши специалисты спланируют вместе с Вами взвешенное решение Ваших производственных задач!</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>

@@ -132,4 +132,37 @@ section.section-landing {
       }
     }
   }
+
+  #thirdCarouselSection {
+    .carousel-item {
+     height: 100%;
+    }
+
+    img {
+      border-radius: 16px;
+    }
+
+    .wrapper-control {
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: flex;
+    }
+    .carousel-control-prev, .carousel-control-next {
+      position: unset;
+      left: unset;
+      right: unset;
+      top: unset;
+      bottom: unset;
+      padding: 5px;
+      background-color: $white;
+      opacity: 1;
+      width: unset;
+      font-size: 18px;
+
+      @include respond-to(md) {
+        font-size: 32px;
+      }
+    }
+  }
 }
