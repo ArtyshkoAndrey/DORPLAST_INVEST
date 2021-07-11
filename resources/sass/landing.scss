@@ -138,8 +138,10 @@ section.section-landing {
      height: 100%;
     }
 
-    img {
-      border-radius: 16px;
+    @include respond-to(md) {
+      img {
+        border-radius: 16px;
+      }
     }
 
     .wrapper-control {
@@ -175,18 +177,45 @@ section.section-landing {
 
   #people-info-img {
     margin-top: 130px;
+
+    @include respond-to(md) {
+      margin-top: 50px;
+    }
+
+    @include respond-to(lg) {
+      margin-top: -100px;
+    }
   }
 
   #union {
-    background-image: url("../img/Group 26.png");
+
     content: ' ';
     display: block;
-    width: 285px;
-    height: 112px;
     background-size: cover;
-
     position: absolute;
+
     top: 25px;
     left: calc(50% - 142px);
+    width: 285px;
+    height: 112px;
+    background-image: url("../img/text-people-mobile.svg");
+
+    @include respond-to(md) {
+      width: 395px;
+      height: 120px;
+      top: calc(50%);
+      left: calc(50% - 197.5px);
+      background-image: url("../img/text-people-md.svg");
+    }
+
+    @include respond-to(lg) {
+      width: 409px;
+      height: 103px;
+      top: -100px;
+      right: 70%;
+      left: unset;
+      background-image: url("../img/text-people-lg.svg");
+    }
+
   }
 }

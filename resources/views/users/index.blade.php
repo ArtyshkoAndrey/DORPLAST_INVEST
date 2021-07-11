@@ -204,7 +204,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-6 position-relative">
+      <div class="col-lg-6 col-md-10 offset-md-1 offset-lg-0 position-relative">
         <img src="{{ asset('img/Group 30.png') }}" class="img-fluid w-100" alt="Человек" id="people-info-img">
         <div class="" id="union"></div>
       </div>
