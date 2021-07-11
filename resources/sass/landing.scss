@@ -173,6 +173,10 @@ section.section-landing {
   > .row {
     background-color: #F7F9FB;
     border-radius: 24px;
+
+    @include respond-to(lg) {
+      padding-right: 0!important;
+    }
   }
 
   #people-info-img {
@@ -209,10 +213,10 @@ section.section-landing {
     }
 
     @include respond-to(lg) {
-      width: 409px;
-      height: 103px;
-      top: -100px;
-      right: 70%;
+      width: 373px;
+      height: 94px;
+      top: -82px;
+      right: 66%;
       left: unset;
       background-image: url("../img/text-people-lg.svg");
     }

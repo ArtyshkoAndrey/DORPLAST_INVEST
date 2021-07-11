@@ -164,7 +164,7 @@
 
   <section class="container-md section-landing pb-5" id="four-future-section">
     <div class="row px-3 py-5 px-md-5">
-      <div class="col-lg-6">
+      <div class="col-lg-7">
         <div class="row">
           <div class="col-12">
             <p class="text-primary">Наша цель – это Ваш экономический успех!</p>
@@ -204,7 +204,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-6 col-md-10 offset-md-1 offset-lg-0 position-relative">
+      <div class="col-lg-5 col-md-10 offset-md-1 offset-lg-0 position-relative">
         <img src="{{ asset('img/Group 30.png') }}" class="img-fluid w-100" alt="Человек" id="people-info-img">
         <div class="" id="union"></div>
       </div>
