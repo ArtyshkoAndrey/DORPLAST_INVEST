@@ -263,7 +263,7 @@
 
         </div>
 
-        <div class="col-xxl-4 col-md-6 col-12 px-xxl-5">
+        <div class="col-xxl-4 col-md-6 col-12 px-xxl-5 mt-md-5 mt-xxl-0">
 
           <div class="row">
             <div class="col-12">
@@ -305,7 +305,7 @@
     </div>
   </section>
 
-  <section class="container-md section-landing pb-5" id="six-info-section">
+  <section class="container-md section-landing" id="six-info-section">
     <div class="row">
       <div class="col-md-6 col-lg-4">
         <h3 class="fw-bold">Большой опыт и сотрудничество</h3>
@@ -319,6 +319,58 @@
         </p>
       </div>
     </div>
+  </section>
+
+  <section class="container-fluid section-landing" id="seven-info-section">
+   <div class="container-md">
+    <div class="row gx-5 align-items-stretch">
+      <div class="col-lg-6 col-12 mt-4 mt-lg-0 px-0 pe-lg-5 ps-lg-3 order-last order-lg-first">
+        <img src="{{ asset('img/toSliderThird.jpg') }}" alt="image" class="img-fluid h-100 w-100 object-fit-cover">
+      </div>
+      <div class="col-lg-6 col-12" id="column-gray">
+        <h5 class="fw-bold">Мы обеспечим</h5>
+
+        <ul class="bar px-0 pe-5">
+          <li><span>профессиональный подход к каждому предложенному проекту с учетом всех возможных вариантов его реализации</span></li>
+          <li><span>подбор качественных композиционных материалов, имеющие соответствующие сертификаты</span></li>
+          <li><span>подбор наиболее оптимальной конструкции изделия в соответствии с конкретными условиями его дальнейшей эксплуатации</span></li>
+        </ul>
+
+        <a href="#!" class="btn btn-outline-gradient-primary mt-3 px-3 py-2">Получить коммерческое предложение</a>
+      </div>
+    </div>
+   </div>
+  </section>
+
+  <section class="container-lg section-landing d-none d-lg-block mb-5" id="eight-poesd-section">
+    <div class="row px-4 py-5">
+      <h5 class="text-white">Производственные площади</h5>
+      <div class="col-lg-6 mt-4">
+        <div class="row gy-5">
+
+          <div class="col-lg-6">
+            <h5 class="text-white fw-bold display-6">70 000 м2</h5>
+            <p class="text-white">Общая площадь производства</p>
+          </div>
+
+          <div class="col-lg-6">
+            <h5 class="text-white fw-bold display-6">67 400 м2</h5>
+            <p class="text-white">Переработка отходов, ремонта и техническое обслуживание </p>
+          </div>
+
+          <div class="col-lg-6">
+            <h5 class="text-white fw-bold display-6">1800 м2</h5>
+            <p class="text-white">Машинный зал</p>
+          </div>
+
+          <div class="col-lg-6">
+            <h5 class="text-white fw-bold display-6">800 м2</h5>
+            <p class="text-white">Общая площадь производства</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </section>
 
 @endsection

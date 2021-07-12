@@ -243,6 +243,7 @@ section.section-landing {
   p {
     opacity: 0.7;
     font-size: 16px;
+    padding-bottom: 20px;
 
     @include respond-to(md) {
       font-size: 18px;
@@ -278,5 +279,115 @@ section.section-landing {
   p {
     color: #878C90;
     font-size: 16px;
+  }
+}
+
+#seven-info-section {
+
+  h5 {
+    font-size: 21px;
+
+    @include respond-to(md) {
+      font-size: 24px;
+    }
+
+  }
+
+  #column-gray {
+    background-color: #F7F9FB;
+    border-radius: 0;
+    padding: 33px;
+
+    @include respond-to(md) {
+      border-radius: 16px;
+      padding: 33px;
+    }
+  }
+
+  img {
+    border-radius: 0;
+    @include respond-to(md) {
+      border-radius: 16px;
+    }
+  }
+
+  .bar {
+    list-style: none;
+  }
+  .bar >li {
+    position: relative;
+    z-index: 0;
+
+
+    //list-style-position: outside;
+    //list-style-image:  url("../img/dot-ul.svg");
+
+    span {
+      margin-left: 40px;
+      display: block;
+      padding-bottom: 16px;
+
+      @include respond-to(md) {
+        padding-bottom: 64px;
+      }
+    }
+  }
+  .bar>li:before {
+    position: absolute;
+    content: ' ';
+    background-image: url("../img/dot-ul.svg");
+    background-size: cover;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    z-index: 2;
+
+    @include respond-to(md) {
+      top: 17%;
+    }
+  }
+  .bar>li:after {
+    z-index: -1;
+    position: absolute;
+    left: 10px;
+    top: 0;
+    content: '';
+    border-left: 2px solid $primary;
+    margin-left: 5px;
+    height: 100%;
+
+    @include respond-to(md) {
+      top:30px;
+    }
+  }
+  .bar >li:first-of-type:after {
+    top: 0%;
+    @include respond-to(md) {
+      top: 36%
+    }
+  }
+  .bar >li:last-of-type
+  {
+    &:after {
+      top: -33%;
+      height: 50%;
+    }
+
+    span {
+      padding-bottom: 0;
+    }
+  }
+  //.bar > li::marker  {
+  //  margin-top: 10px;
+  //}
+}
+
+#eight-poesd-section {
+  > .row {
+    background-image: url("../img/poesd.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
   }
 }
