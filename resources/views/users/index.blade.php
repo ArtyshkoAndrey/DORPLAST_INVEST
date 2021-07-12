@@ -8,9 +8,12 @@
            id="first-big-image">
     <div class="row justify-content-center">
       <div class="col-12 px-0 px-md-3">
-        <img src="{{ asset('img/dorplast-big-min.jpg') }}"
-             class="img-fluid w-100"
-             alt="dorplast Инвест">
+
+        <picture>
+          <source srcset="{{ asset('img/webp/dorplast-big-min.webp') }}" type="image/webp">
+          <source srcset="{{ asset('img/dorplast-big-min.jpg') }}" type="image/jpeg">
+          <img src="{{ asset('img/dorplast-big-min.jpg') }}" class="img-fluid w-100" alt="dorplast Инвест">
+        </picture>
       </div>
     </div>
   </section>
@@ -136,13 +139,25 @@
         <div id="thirdCarouselSection" class="carousel slide h-100" data-bs-ride="carousel">
           <div class="carousel-inner h-100">
             <div class="carousel-item active">
-              <img src="{{ asset('img/toSliderThird.jpg') }}" class="object-fit-cover w-100 h-100" alt="">
+              <picture>
+                <source srcset="{{ asset('img/webp/toSliderThird.webp') }}" type="image/webp">
+                <source srcset="{{ asset('img/toSliderThird.jpg') }}" type="image/jpeg">
+                <img src="{{ asset('img/toSliderThird.jpg') }}" class="object-fit-cover w-100 h-100" alt="dorplast Инвест">>
+              </picture>
             </div>
             <div class="carousel-item">
-              <img src="{{ asset('img/toSliderThird.jpg') }}" class="object-fit-cover w-100 h-100" alt="">
+              <picture>
+                <source srcset="{{ asset('img/webp/toSliderThird.webp') }}" type="image/webp">
+                <source srcset="{{ asset('img/toSliderThird.jpg') }}" type="image/jpeg">
+                <img src="{{ asset('img/toSliderThird.jpg') }}" class="object-fit-cover w-100 h-100" alt="dorplast Инвест">>
+              </picture>
             </div>
             <div class="carousel-item">
-              <img src="{{ asset('img/toSliderThird.jpg') }}" class="object-fit-cover w-100 h-100" alt="">
+              <picture>
+                <source srcset="{{ asset('img/webp/toSliderThird.webp') }}" type="image/webp">
+                <source srcset="{{ asset('img/toSliderThird.jpg') }}" type="image/jpeg">
+                <img src="{{ asset('img/toSliderThird.jpg') }}" class="object-fit-cover w-100 h-100" alt="dorplast Инвест">>
+              </picture>
             </div>
           </div>
           <div class="wrapper-control">
@@ -205,7 +220,13 @@
         </div>
       </div>
       <div class="col-lg-5 col-md-10 offset-md-1 offset-lg-0 position-relative">
-        <img src="{{ asset('img/Group 30.png') }}" class="img-fluid w-100" alt="Человек" id="people-info-img">
+
+        <picture>
+          <source srcset="{{ asset('img/webp/Group 30.webp') }}" type="image/webp">
+          <source srcset="{{ asset('img/Group 30.png') }}" type="image/png">
+          <img src="{{ asset('img/Group 30.png') }}" class="img-fluid w-100" alt="Человек" id="people-info-img">
+        </picture>
+
         <div class="" id="union"></div>
       </div>
     </div>
@@ -325,7 +346,11 @@
    <div class="container-md">
     <div class="row gx-5 align-items-stretch">
       <div class="col-lg-6 col-12 mt-4 mt-lg-0 px-0 pe-lg-5 ps-lg-3 order-last order-lg-first">
-        <img src="{{ asset('img/toSliderThird.jpg') }}" alt="image" class="img-fluid h-100 w-100 object-fit-cover">
+        <picture>
+          <source srcset="{{ asset('img/webp/toSliderThird.webp') }}" type="image/webp">
+          <source srcset="{{ asset('img/toSliderThird.jpg') }}" type="image/jpeg">
+          <img src="{{ asset('img/toSliderThird.jpg') }}" class="img-fluid h-100 w-100 object-fit-cover" alt="dorplast Инвест">>
+        </picture>
       </div>
       <div class="col-lg-6 col-12" id="column-gray">
         <h5 class="fw-bold">Мы обеспечим</h5>

@@ -6,8 +6,11 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <link rel="stylesheet" href="{{ asset('css/iconly.css') }}">
-  <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+  <link rel="preload" href="{{ asset('css/iconly.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="{{ asset('css/iconly.css') }}"></noscript>
+
+  <link rel="preload" href="{{ asset('css/app.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="{{ asset('css/app.css') }}"></noscript>
 
   <title>{{ config('app.name') }} - @yield('title', 'Главная страницу')</title>
 </head>
