@@ -486,7 +486,11 @@ section.section-landing {
 
   #products {
     .product {
-      padding: 12px 25px;
+      padding: 6px 20px;
+
+      @include respond-to(md) {
+        padding: 12px 25px;
+      }
 
       a {
         color: #2983EE;

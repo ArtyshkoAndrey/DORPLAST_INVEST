@@ -11759,7 +11759,12 @@ section.section-landing {
   }
 }
 #ten-product-section #products .product {
-  padding: 12px 25px;
+  padding: 6px 20px;
+}
+@media (min-width: 768px) {
+  #ten-product-section #products .product {
+    padding: 12px 25px;
+  }
 }
 #ten-product-section #products .product a {
   color: #2983EE;
