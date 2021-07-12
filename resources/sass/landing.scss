@@ -496,7 +496,11 @@ section.section-landing {
         background: #FFFFFF;
         box-shadow: 0px 8px 20px #E4E5E8;
         border-radius: 16px;
-        padding: 24px;
+        padding: 14px;
+
+        @include respond-to(md) {
+          padding: 24px;
+        }
       }
 
       .name {

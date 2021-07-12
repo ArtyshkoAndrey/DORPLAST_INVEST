@@ -11769,7 +11769,12 @@ section.section-landing {
   background: #FFFFFF;
   box-shadow: 0px 8px 20px #E4E5E8;
   border-radius: 16px;
-  padding: 24px;
+  padding: 14px;
+}
+@media (min-width: 768px) {
+  #ten-product-section #products .product > .row {
+    padding: 24px;
+  }
 }
 #ten-product-section #products .product .name {
   color: #1D1D1B;
