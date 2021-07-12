@@ -391,3 +391,44 @@ section.section-landing {
     border-radius: 15px;
   }
 }
+
+#nine-maker-product-section {
+  .maker-product {
+    > .row {
+      padding: 24px;
+      border-radius: 16px;
+      background: #FFFFFF;
+      box-shadow: 0px 8px 20px #E4E5E8;
+      height: 100%;
+    }
+
+    h5 {
+      font-size: 18px;
+      color: #1D1D1B;
+      text-align: center;
+
+      @include respond-to(md) {
+        font-size: 21px;
+      }
+    }
+
+    p {
+      font-size:  16px;
+      text-align: center;
+      color: #878C90
+    }
+
+    &.product-primary {
+      > .row {
+        background: linear-gradient(126.12deg, #89F1FF -11.81%, #2983EE 95.35%);
+        box-shadow: none;
+      }
+      h5 {
+        text-align: unset;
+      }
+      h5, p {
+        color: $white !important;
+      }
+    }
+  }
+}

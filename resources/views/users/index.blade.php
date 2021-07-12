@@ -349,7 +349,7 @@
         <picture>
           <source srcset="{{ asset('img/webp/toSliderThird.webp') }}" type="image/webp">
           <source srcset="{{ asset('img/toSliderThird.jpg') }}" type="image/jpeg">
-          <img src="{{ asset('img/toSliderThird.jpg') }}" class="img-fluid h-100 w-100 object-fit-cover" alt="dorplast Инвест">>
+          <img src="{{ asset('img/toSliderThird.jpg') }}" class="img-fluid h-100 w-100 object-fit-cover" alt="dorplast Инвест">
         </picture>
       </div>
       <div class="col-lg-6 col-12" id="column-gray">
@@ -367,7 +367,7 @@
    </div>
   </section>
 
-  <section class="container-lg section-landing d-none d-lg-block mb-5" id="eight-poesd-section">
+  <section class="container-lg section-landing d-none d-lg-block" id="eight-poesd-section">
     <div class="row px-4 py-5">
       <h5 class="text-white">Производственные площади</h5>
       <div class="col-lg-6 mt-4">
@@ -396,6 +396,68 @@
       </div>
     </div>
 
+  </section>
+
+  <section class="container-md section-landing mb-5" id="nine-maker-product-section">
+    <div class="align-items-stretch gx-4 gx-md-5 gy-4 justify-content-center row">
+
+      <div class="col-xxl-3 col-lg-4 col-sm-7 col-md-6 col-11 maker-product product-primary">
+        <div class="row">
+          <div class="col-12">
+            <img src="{{ asset('img/plastic 1.svg') }}" alt="plastic icon" class="img-fluid">
+          </div>
+          <div class="col-12 mt-3">
+            <h5>Сырье для производства нашей продукции</h5>
+            <hr class="bg-light my-4">
+            <p>Мы перерабатываем ПЭТ бутылки и изготавливаем из него сырье для изготовления нашей продукции</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xxl-3 col-lg-4 col-sm-7 col-md-6 col-11 maker-product">
+        <div class="row">
+          <div class="col-12 mt-2">
+            <img src="{{ asset('img/Frame 9.jpg') }}" alt="plastic icon" class="img-fluid">
+          </div>
+          <div class="col-12 mt-3">
+            <h5>Гранула-ПНД</h5>
+            <p>
+              Гранулы ПНД позволяют уменьшать цену производимого изделия
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xxl-3 col-lg-4 col-sm-7 col-md-6 col-11 maker-product">
+        <div class="row">
+          <div class="col-12 mt-2">
+            <img src="{{ asset('img/Frame 10.jpg') }}" alt="plastic icon" class="img-fluid">
+          </div>
+          <div class="col-12 mt-3">
+            <h5>Гранула-ПЭТ</h5>
+            <p>
+              материал, полученный после переработки пластиковых емкостей
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xxl-3 col-lg-4 col-sm-7 col-md-6 col-11 maker-product">
+        <div class="row">
+          <div class="col-12 mt-2">
+            <img src="{{ asset('img/Frame 10.jpg') }}" alt="plastic icon" class="img-fluid">
+          </div>
+          <div class="col-12 mt-3">
+            <h5>ПЭТ-флекса</h5>
+            <p>
+              результат переработки пластика (в основном, пластиковых бутылок) в особые хлопья
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
   </section>
 
 @endsection
