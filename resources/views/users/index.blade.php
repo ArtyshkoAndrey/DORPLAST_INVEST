@@ -398,7 +398,7 @@
 
   </section>
 
-  <section class="container-md section-landing mb-5" id="nine-maker-product-section">
+  <section class="container-md section-landing" id="nine-maker-product-section">
     <div class="align-items-stretch gx-4 gx-md-5 gy-4 justify-content-center row">
 
       <div class="col-xxl-3 col-lg-4 col-sm-7 col-md-6 col-11 maker-product product-primary">
@@ -457,6 +457,161 @@
       </div>
 
 
+    </div>
+  </section>
+
+  <section class="container-md section-landing mb-5" id="ten-product-section">
+    <div class="row gy-4" id="info-products">
+      <div class="col-lg-6">
+        <h2>Изготавливаем для вас</h2>
+
+        <ul class="mt-4">
+          <li><p>оснастку для различных методов производства</p></li>
+          <li><p>различные детали из пластика</p></li>
+          <li><p>различные детали из копозиционных материалов</p></li>
+        </ul>
+      </div>
+      <div class="col-lg-6">
+        <h3>Мы видим себя в качестве Вашего партнёра и консультанта.</h3>
+        <p class="mt-3">
+          Наличие опытной конструкторской базы и многолетнего сотрудничества с
+          ведущими машиностроительными предприятиями, позволяет нашему заводу
+          полимерных изделий оперативно проектировать, изготовлять и ремонтировать пресс
+          формы, обеспечивая кратчайшие сроки освоения новых изделий из пластмассы.
+        </p>
+      </div>
+    </div>
+
+    <div class="row justify-content-center justify-content-md-start" id="products">
+      <div class="col-xxl-3 col-lg-4 col-md-6 col-6 product">
+        <div class="row">
+          <div class="col-12">
+            <img src="{{ asset('img/product.jpg') }}" class="img-fluid" alt="product">
+          </div>
+          <div class="col-12 name">
+            <p>ПЭТ лента</p>
+          </div>
+          <div class="col-12 description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur, blanditiis commodi dolor officia provident tempora. Et explicabo fugit odit?
+          </div>
+          <div class="col-12">
+            <a href="#!" class="text-primary text-decoration-none d-flex align-items-center">Подробнее <i class="icon-arrow-right-2 ms-1 mt-1"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xxl-3 col-lg-4 col-md-6 col-6 product">
+        <div class="row">
+          <div class="col-12">
+            <img src="{{ asset('img/product.jpg') }}" class="img-fluid" alt="product">
+          </div>
+          <div class="col-12 name">
+            <p>ПЭТ лента</p>
+          </div>
+          <div class="col-12 description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur, blanditiis commodi dolor officia provident tempora. Et explicabo fugit odit?
+          </div>
+          <div class="col-12">
+            <a href="#!" class="text-primary text-decoration-none d-flex align-items-center">Подробнее <i class="icon-arrow-right-2 ms-1 mt-1"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xxl-3 col-lg-4 col-md-6 col-6 product">
+        <div class="row">
+          <div class="col-12">
+            <img src="{{ asset('img/product.jpg') }}" class="img-fluid" alt="product">
+          </div>
+          <div class="col-12 name">
+            <p>ПЭТ лента</p>
+          </div>
+          <div class="col-12 description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur, blanditiis commodi dolor officia provident tempora. Et explicabo fugit odit?
+          </div>
+          <div class="col-12">
+            <a href="#!" class="text-primary text-decoration-none d-flex align-items-center">Подробнее <i class="icon-arrow-right-2 ms-1 mt-1"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xxl-3 col-lg-4 col-md-6 col-6 product">
+        <div class="row">
+          <div class="col-12">
+            <img src="{{ asset('img/product.jpg') }}" class="img-fluid" alt="product">
+          </div>
+          <div class="col-12 name">
+            <p>ПЭТ лента</p>
+          </div>
+          <div class="col-12 description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur, blanditiis commodi dolor officia provident tempora. Et explicabo fugit odit?
+          </div>
+          <div class="col-12">
+            <a href="#!" class="text-primary text-decoration-none d-flex align-items-center">Подробнее <i class="icon-arrow-right-2 ms-1 mt-1"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xxl-3 col-lg-4 col-md-6 col-6 product">
+        <div class="row">
+          <div class="col-12">
+            <img src="{{ asset('img/product.jpg') }}" class="img-fluid" alt="product">
+          </div>
+          <div class="col-12 name">
+            <p>ПЭТ лента</p>
+          </div>
+          <div class="col-12 description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur, blanditiis commodi dolor officia provident tempora. Et explicabo fugit odit?
+          </div>
+          <div class="col-12">
+            <a href="#!" class="text-primary text-decoration-none d-flex align-items-center">Подробнее <i class="icon-arrow-right-2 ms-1 mt-1"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xxl-3 col-lg-4 col-md-6 col-6 product">
+        <div class="row">
+          <div class="col-12">
+            <img src="{{ asset('img/product.jpg') }}" class="img-fluid" alt="product">
+          </div>
+          <div class="col-12 name">
+            <p>ПЭТ лента</p>
+          </div>
+          <div class="col-12 description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur, blanditiis commodi dolor officia provident tempora. Et explicabo fugit odit?
+          </div>
+          <div class="col-12">
+            <a href="#!" class="text-primary text-decoration-none d-flex align-items-center">Подробнее <i class="icon-arrow-right-2 ms-1 mt-1"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xxl-3 col-lg-4 col-md-6 col-6 product">
+        <div class="row">
+          <div class="col-12">
+            <img src="{{ asset('img/product.jpg') }}" class="img-fluid" alt="product">
+          </div>
+          <div class="col-12 name">
+            <p>ПЭТ лента</p>
+          </div>
+          <div class="col-12 description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur, blanditiis commodi dolor officia provident tempora. Et explicabo fugit odit?
+          </div>
+          <div class="col-12">
+            <a href="#!" class="text-primary text-decoration-none d-flex align-items-center">Подробнее <i class="icon-arrow-right-2 ms-1 mt-1"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xxl-3 col-lg-4 col-md-6 col-6 product">
+        <div class="row">
+          <div class="col-12">
+            <img src="{{ asset('img/product.jpg') }}" class="img-fluid" alt="product">
+          </div>
+          <div class="col-12 name">
+            <p>ПЭТ лента</p>
+          </div>
+          <div class="col-12 description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur, blanditiis commodi dolor officia provident tempora. Et explicabo fugit odit?
+          </div>
+          <div class="col-12">
+            <a href="#!" class="text-primary text-decoration-none d-flex align-items-center">Подробнее <i class="icon-arrow-right-2 ms-1 mt-1"></i></a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
