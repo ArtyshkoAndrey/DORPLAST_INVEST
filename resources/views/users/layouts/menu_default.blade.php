@@ -1,5 +1,5 @@
 <!-- As a link -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white d-block">
+<nav class="navbar navbar-default navbar-expand-lg navbar-light bg-white d-block">
   <div class="container-xxl container-md my-2 mx-xxl-auto mx-md-auto justify-content-center">
     <div class="row w-100 align-items-center">
       {{--        Brand Name  --}}
