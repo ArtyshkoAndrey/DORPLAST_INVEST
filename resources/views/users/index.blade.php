@@ -766,11 +766,11 @@
 @section('js')
   <script>
     $(function () {
-      $('#menu-links #links a').on('click', function (e) {
-        e.preventDefault();
-        $('#menu-links #links a').removeClass('active')
-        $(this).toggleClass('active')
-      })
+      // $('#menu-links #links a').on('click', function (e) {
+      //   e.preventDefault();
+      //   $('#menu-links #links a').removeClass('active')
+      //   $(this).toggleClass('active')
+      // })
 
       let sliderSecondSection = document.getElementById('carouselSecondSection')
       let counterFromSliderSecondSection = document.getElementById('counterFromSliderSecondSection')
@@ -858,5 +858,40 @@
     function convertRemToPixels(rem) {
       return rem * parseFloat(getComputedStyle(document.documentElement).fontSize);
     }
+
+    $(document).ready(function(){
+      var lastId,
+        topMenu = $("#menu-links #links .col-auto"),
+        menuItems = topMenu.find("a"),
+        scrollItems = menuItems.map(function () {
+          var item = $($(this).attr("href"));
+          if (item.length) {
+            return item;
+          }
+        });
+      menuItems.click(function (e) {
+        var href = $(this).attr("href"),
+          offsetTop = href === "#" ? 0 : $(href).offset().top + 1;
+        $('html, body').stop().animate({
+          scrollTop: offsetTop
+        }, 1000);
+        e.preventDefault();
+      });
+      $(window).scroll(function () {
+        var fromTop = $(this).scrollTop();
+        var cur = scrollItems.map(function () {
+          if ($(this).offset().top <= fromTop)
+            return this;
+        });
+        cur = cur[cur.length - 1];
+        var id = cur && cur.length ? cur[0].id : "";
+
+        if (lastId !== id) {
+          lastId = id;
+          menuItems.removeClass("active")
+          menuItems.filter("[href='#" + id + "']").addClass("active");
+        }
+      });
+    });
   </script>
 @endsection

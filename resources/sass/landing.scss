@@ -3,11 +3,17 @@ section.section-landing {
   &:last-of-type {
     margin-bottom: 44px;
   }
+  &:first-of-type {
+    margin-top: 80px;
+  }
 
   @include respond-to(md) {
     margin-top: 100px;
     &:last-of-type {
       margin-bottom: 100px;
+    }
+    &:first-of-type {
+      margin-top: 200px;
     }
   }
 
@@ -15,6 +21,9 @@ section.section-landing {
     margin-top: 120px;
     &:last-of-type {
       margin-bottom: 120px;
+    }
+    &:first-of-type {
+      margin-top: 230px;
     }
   }
 }

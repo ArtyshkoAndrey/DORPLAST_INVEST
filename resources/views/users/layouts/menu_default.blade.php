@@ -38,25 +38,25 @@
     <div class="container-xxl container-md my-2 mx-0 mx-xxl-auto mx-md-auto mb-0">
       <div class="row gx-0 gx-lg-4 flex-column flex-lg-row mx-0 mx-lg-1" id="links">
         <div class="col-auto">
-          <a href="" class="nav-link px-0">О компании</a>
+          <a href="#second-about-section" class="nav-link px-0">О компании</a>
         </div>
         <div class="col-auto">
-          <a href="" class="nav-link px-0">Услуги</a>
+          <a href="#five-info-section" class="nav-link px-0">Услуги</a>
         </div>
         <div class="col-auto">
-          <a href="" class="nav-link px-0">Производство</a>
+          <a href="#six-info-section" class="nav-link px-0">Производство</a>
         </div>
         <div class="col-auto">
-          <a href="" class="nav-link px-0">Продукция</a>
+          <a href="#eight-poesd-section" class="nav-link px-0">Продукция</a>
         </div>
         <div class="col-auto">
-          <a href="" class="nav-link px-0">Галерея</a>
+          <a href="#eleven-slider-section" class="nav-link px-0">Галерея</a>
         </div>
         <div class="col-auto">
-          <a href="" class="nav-link px-0">Статьи</a>
+          <a href="#twelfth-section" class="nav-link px-0">Статьи</a>
         </div>
         <div class="col-auto">
-          <a href="" class="nav-link px-0">Контакты</a>
+          <a href="#thirteen-section" class="nav-link px-0">Контакты</a>
         </div>
         <hr class="d-block d-md-none m-0">
       </div>

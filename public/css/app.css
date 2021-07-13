@@ -11291,6 +11291,14 @@ textarea.form-control-lg {
      object-fit: cover;
 }
 
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-bottom: 0;
+  right: 0;
+  z-index: 1000;
+}
 .navbar *, .navbar .btn {
   font-size: 16px !important;
 }
@@ -11434,12 +11442,18 @@ section.section-landing {
 section.section-landing:last-of-type {
   margin-bottom: 44px;
 }
+section.section-landing:first-of-type {
+  margin-top: 80px;
+}
 @media (min-width: 768px) {
   section.section-landing {
     margin-top: 100px;
   }
   section.section-landing:last-of-type {
     margin-bottom: 100px;
+  }
+  section.section-landing:first-of-type {
+    margin-top: 200px;
   }
 }
 @media (min-width: 1400px) {
@@ -11448,6 +11462,9 @@ section.section-landing:last-of-type {
   }
   section.section-landing:last-of-type {
     margin-bottom: 120px;
+  }
+  section.section-landing:first-of-type {
+    margin-top: 230px;
   }
 }
 
