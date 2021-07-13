@@ -12092,3 +12092,119 @@ section.section-landing:first-of-type {
 #thirteen-section .map iframe {
   border-radius: 16px;
 }
+
+/*!
+ * Copyright (c) 2021.
+ * All code files are the property of the Fulliton Creator.
+ * No one has the right to modify files without the consent of the creator.
+ * The code is completely open and copyable is allowed.
+ * GitHub https://github.com/ArtyshkoAndrey/
+ */
+@media (min-width: 768px) {
+  #section-title-with-image img {
+    border-radius: 16px;
+  }
+}
+#section-title-with-image .col-image {
+  position: relative;
+  padding: 0;
+}
+#section-title-with-image .col-image h1, #section-title-with-image .col-image .h1 {
+  color: #fff;
+  font-size: 21px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+  z-index: 2;
+}
+@media (min-width: 768px) {
+  #section-title-with-image .col-image h1, #section-title-with-image .col-image .h1 {
+    font-size: 40px;
+    padding: 40px;
+  }
+}
+@media (min-width: 992px) {
+  #section-title-with-image .col-image h1, #section-title-with-image .col-image .h1 {
+    font-size: 48px;
+  }
+}
+#section-title-with-image .col-image::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.42) 100%);
+}
+@media (min-width: 768px) {
+  #section-title-with-image .col-image::after {
+    border-radius: 16px;
+  }
+}
+
+#content p {
+  color: #878C90;
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  #content p {
+    font-size: 18px;
+  }
+}
+#content h2, #content .h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  #content h2, #content .h2 {
+    font-size: 28px;
+  }
+}
+#content h3, #content .h3 {
+  font-size: 21px;
+  font-weight: 500;
+}
+@media (min-width: 768px) {
+  #content h3, #content .h3 {
+    font-size: 24px;
+  }
+}
+#content h4, #content .h4 {
+  font-size: 18px;
+  font-weight: 500;
+}
+@media (min-width: 768px) {
+  #content h4, #content .h4 {
+    font-size: 21px;
+  }
+}
+#content h5, #content .h5, #content h6, #content .h6 {
+  font-size: 16px;
+  font-weight: 600;
+}
+@media (min-width: 768px) {
+  #content h5, #content .h5, #content h6, #content .h6 {
+    font-size: 18px;
+  }
+}
+#content img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  border-radius: 16px;
+}
+#content a {
+  font-size: 16px;
+  color: #212529 !important;
+  text-decoration: none;
+}
+@media (min-width: 768px) {
+  #content a {
+    font-size: 18px;
+  }
+}
