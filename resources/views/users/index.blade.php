@@ -460,7 +460,7 @@
     </div>
   </section>
 
-  <section class="container-md section-landing mb-5" id="ten-product-section">
+  <section class="container-md section-landing" id="ten-product-section">
     <div class="row gy-4" id="info-products">
       <div class="col-lg-6">
         <h2>Изготавливаем для вас</h2>
@@ -483,7 +483,7 @@
     </div>
 
     <div class="row justify-content-center justify-content-md-start" id="products">
-      <div class="col-xxl-3 col-lg-4 col-md-6 col-6 product">
+      <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-11 product">
         <div class="row">
           <div class="col-12">
             <img src="{{ asset('img/product.jpg') }}" class="img-fluid" alt="product">
@@ -500,7 +500,7 @@
         </div>
       </div>
 
-      <div class="col-xxl-3 col-lg-4 col-md-6 col-6 product">
+      <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-11 product">
         <div class="row">
           <div class="col-12">
             <img src="{{ asset('img/product.jpg') }}" class="img-fluid" alt="product">
@@ -516,7 +516,7 @@
           </div>
         </div>
       </div>
-      <div class="col-xxl-3 col-lg-4 col-md-6 col-6 product">
+      <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-11 product">
         <div class="row">
           <div class="col-12">
             <img src="{{ asset('img/product.jpg') }}" class="img-fluid" alt="product">
@@ -532,7 +532,7 @@
           </div>
         </div>
       </div>
-      <div class="col-xxl-3 col-lg-4 col-md-6 col-6 product">
+      <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-11 product">
         <div class="row">
           <div class="col-12">
             <img src="{{ asset('img/product.jpg') }}" class="img-fluid" alt="product">
@@ -548,7 +548,7 @@
           </div>
         </div>
       </div>
-      <div class="col-xxl-3 col-lg-4 col-md-6 col-6 product">
+      <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-11 product">
         <div class="row">
           <div class="col-12">
             <img src="{{ asset('img/product.jpg') }}" class="img-fluid" alt="product">
@@ -564,7 +564,7 @@
           </div>
         </div>
       </div>
-      <div class="col-xxl-3 col-lg-4 col-md-6 col-6 product">
+      <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-11 product">
         <div class="row">
           <div class="col-12">
             <img src="{{ asset('img/product.jpg') }}" class="img-fluid" alt="product">
@@ -580,7 +580,7 @@
           </div>
         </div>
       </div>
-      <div class="col-xxl-3 col-lg-4 col-md-6 col-6 product">
+      <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-11 product">
         <div class="row">
           <div class="col-12">
             <img src="{{ asset('img/product.jpg') }}" class="img-fluid" alt="product">
@@ -596,7 +596,7 @@
           </div>
         </div>
       </div>
-      <div class="col-xxl-3 col-lg-4 col-md-6 col-6 product">
+      <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-11 product">
         <div class="row">
           <div class="col-12">
             <img src="{{ asset('img/product.jpg') }}" class="img-fluid" alt="product">
@@ -613,6 +613,71 @@
         </div>
       </div>
     </div>
+  </section>
+
+  <section class="container-md section-landing mb-5" id="eleven-slider-section">
+
+    <div class="align-items-center row">
+      <div class="col-xxl-5 col-lg-6 col-md-12" id="info-for-slider">
+        <div class="wrapper-gray">
+          <h3>Мы видим себя в качестве Вашего партнёра и консультанта.</h3>
+          <p>
+            Наличие опытной конструкторской базы и многолетнего сотрудничества
+            с ведущими машиностроительными предприятиями, позволяет нашему заводу
+            полимерных изделий оперативно проектировать, изготовлять и ремонтировать
+            пресс формы, обеспечивая кратчайшие сроки освоения новых изделий из пластмассы.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-xxl-7 col-lg-6 col-md-12 mt-5 mt-lg-0 h-100">
+        <div class="wrapper-slider">
+          <div class="row align-items-center">
+            <div class="col-xxl-10 col-lg-9" id="slider-wr-js">
+              <div id="eleventCarouselSection" class="carousel slide h-100" data-bs-ride="carousel">
+                <div class="carousel-inner h-100">
+                  @for($i = 0; $i < 4; $i++)
+                    <div class="carousel-item {{ $i === 0 ? 'active' : '' }}">
+                      <picture>
+                        <source srcset="http://placeimg.com/640/360/any" type="image/webp">
+                        <source srcset="http://placeimg.com/640/360/any" type="image/jpeg">
+                        <img src=http://placeimg.com/640/360/any" class="object-fit-cover w-100 h-100" alt="dorplast Инвест">
+                      </picture>
+                    </div>
+                  @endfor
+                </div>
+                <div class="wrapper-control">
+                  <button class="carousel-control-prev" type="button" data-bs-target="#eleventCarouselSection" data-bs-slide="prev">
+                    <span class="icon-arrow-left-3 text-primary"
+                    aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#eleventCarouselSection" data-bs-slide="next">
+                    <span class="icon-arrow-right-3 text-primary"
+                    aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-xxl-2 col-lg-3 position-relative min-elements">
+              <button class="btn border-0 text-primary w-100 d-none d-lg-block"><i class="icon-arrow-up-2"></i></button>
+              <div class="wrapper-min-img position-relative row flex-column flex-lg-row flex-wrap mt-3 mt-lg-0">
+                @for($i = 0; $i < 10; $i++)
+                  <div class="col-3 col-lg-12">
+                    <div class="item">
+                      <img src="http://placeimg.com/640/360/any" alt="http://placeimg.com/640/360/any" class="img-fluid">
+                    </div>
+                  </div>
+                @endfor
+              </div>
+              <button class="btn border-0 text-primary w-100 d-none d-lg-block" id="down-scroll"><i class="icon-arrow-down-2"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </section>
 
 @endsection
@@ -632,6 +697,50 @@
         console.log(el.to)
         counterFromSliderSecondSection.textContent = el.to + 1
       })
+
+      if (window.innerWidth <= 992) {
+        $('.item').height($('.item').width())
+        $('.wrapper-min-img').height($('.item').height() + 30).css('overflow-x', 'auto')
+        $('#slider-wr-js').height('auto')
+        $('.wrapper-min-img > .col-3').height($('.item').height())
+        // $('.wrapper-min-img').height('auto')
+      } else {
+        $('.wrapper-min-img').height($('#info-for-slider').height()).css('overflow', 'hidden')
+        $('.item').height($('.item').width())
+        $('#slider-wr-js').height($('#info-for-slider').height())
+        $('.wrapper-min-img > .col-3').height('auto')
+      }
+
+      $(window).resize(function () {
+        if (window.innerWidth <= 992) {
+          $('.item').height($('.item').width())
+          $('.wrapper-min-img').height($('.item').height() + 30).css('overflow-x', 'auto')
+          $('#slider-wr-js').height('auto')
+          $('.wrapper-min-img > .col-3').height($('.item').height())
+          // $('.wrapper-min-img').height('auto')
+        } else {
+          $('.wrapper-min-img').height($('#info-for-slider').height()).css('overflow', 'hidden')
+          $('.item').height($('.item').width())
+          $('#slider-wr-js').height($('#info-for-slider').height())
+          $('.wrapper-min-img > .col-3').height('auto')
+        }
+      })
+      let sc = 0;
+      let i = 0;
+      let maxI = 3;
+
+      let mobil
+
+      $('#down-scroll').click( function () {
+        sc += $('.item').height()
+        $('.wrapper-min-img')[0].scrollTo(0,  sc)
+        console.log(sc)
+        $('.wrapper-min-img').css('--linerBottom', '-' + sc + 'px')
+      })
     })
+
+    function convertRemToPixels(rem) {
+      return rem * parseFloat(getComputedStyle(document.documentElement).fontSize);
+    }
   </script>
 @endsection

@@ -132,39 +132,39 @@ section.section-landing {
       }
     }
   }
+}
 
-  #thirdCarouselSection {
-    .carousel-item {
-     height: 100%;
+#thirdCarouselSection, #eleventCarouselSection {
+  .carousel-item {
+    height: 100%;
+  }
+
+  @include respond-to(md) {
+    img {
+      border-radius: 16px;
     }
+  }
+
+  .wrapper-control {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+  }
+  .carousel-control-prev, .carousel-control-next {
+    position: unset;
+    left: unset;
+    right: unset;
+    top: unset;
+    bottom: unset;
+    padding: 5px;
+    background-color: $white;
+    opacity: 1;
+    width: unset;
+    font-size: 18px;
 
     @include respond-to(md) {
-      img {
-        border-radius: 16px;
-      }
-    }
-
-    .wrapper-control {
-      position: absolute;
-      left: 0;
-      top: 0;
-      display: flex;
-    }
-    .carousel-control-prev, .carousel-control-next {
-      position: unset;
-      left: unset;
-      right: unset;
-      top: unset;
-      bottom: unset;
-      padding: 5px;
-      background-color: $white;
-      opacity: 1;
-      width: unset;
-      font-size: 18px;
-
-      @include respond-to(md) {
-        font-size: 32px;
-      }
+      font-size: 32px;
     }
   }
 }
@@ -530,6 +530,77 @@ section.section-landing {
           background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.8) 100% )
         }
       }
+    }
+  }
+}
+
+#eleven-slider-section {
+  .wrapper-gray {
+    background: #F7F9FB;
+    border-radius: 16px;
+    padding: 32px 52px 45px 28px;
+
+    h3 {
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 24px;
+
+      @include respond-to(md) {
+        font-size: 24px;
+      }
+    }
+
+    p {
+      color: #878C90;
+      font-size: 16px;
+
+      @include respond-to(md) {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .wrapper-slider {
+
+  }
+
+  .wrapper-min-img {
+    overflow: hidden;
+    --linerBottom: 0;
+
+    &:before{
+      content: "";
+      display: none;
+      position: absolute;
+      height: 5rem;
+      width: 100%;
+      bottom: var(--linerBottom);
+      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 1) 100% );
+      @include respond-to(lg) {
+        display: block;
+      }
+    }
+
+    .item {
+
+      @include respond-to(lg) {
+        margin-bottom: 12px;
+      }
+
+      img {
+        border-radius: 12px;
+        object-fit: cover;
+        cursor: pointer;
+        height: 100%;
+
+      }
+    }
+  }
+  .btn {
+    z-index: 10;
+
+    &:focus {
+      box-shadow: none;
     }
   }
 }
