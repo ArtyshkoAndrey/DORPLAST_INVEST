@@ -635,11 +635,7 @@
                 <div class="carousel-inner h-100">
                   @for($i = 0; $i < 5; $i++)
                     <div class="carousel-item {{ $i === 0 ? 'active' : '' }}">
-                      <picture>
-                        <source srcset="http://placeimg.com/{{ 640 + $i }}/360/any" type="image/webp">
-                        <source srcset="http://placeimg.com/{{ 640 + $i }}/360/any" type="image/jpeg">
-                        <img src=http://placeimg.com/{{ 640 + $i }}/360/any" class="object-fit-cover w-100 h-100" alt="dorplast Инвест">
-                      </picture>
+                      <img src=http://placeimg.com/{{ 640 + $i }}/360/any" class="object-fit-cover w-100 h-100" alt="dorplast Инвест">
                       <div class="carousel-caption p-3">
                         <p>Посещение нащего предприятия сотрудников АО КТЖ</p>
                       </div>

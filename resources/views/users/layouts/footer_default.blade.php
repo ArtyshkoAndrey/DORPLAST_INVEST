@@ -54,7 +54,7 @@
 
         <div class="row text-white">
           <div class="col-auto">
-            <img src="{{ asset('img/Message_White.svg') }}" alt="message" class="img-fluid">
+            <img src="{{ asset('img/Message_white.svg') }}" alt="message" class="img-fluid">
           </div>
           <div class="col">
             <a href="mailto:info@dorplastinvest.kz" class="text-decoration-none text-white">info@dorplastinvest.kz</a>
