@@ -636,13 +636,16 @@
             <div class="col-xxl-10 col-lg-9" id="slider-wr-js">
               <div id="eleventCarouselSection" class="carousel slide h-100" data-bs-ride="carousel">
                 <div class="carousel-inner h-100">
-                  @for($i = 0; $i < 4; $i++)
+                  @for($i = 0; $i < 5; $i++)
                     <div class="carousel-item {{ $i === 0 ? 'active' : '' }}">
                       <picture>
-                        <source srcset="http://placeimg.com/640/360/any" type="image/webp">
-                        <source srcset="http://placeimg.com/640/360/any" type="image/jpeg">
-                        <img src=http://placeimg.com/640/360/any" class="object-fit-cover w-100 h-100" alt="dorplast Инвест">
+                        <source srcset="http://placeimg.com/{{ 640 + $i }}/360/any" type="image/webp">
+                        <source srcset="http://placeimg.com/{{ 640 + $i }}/360/any" type="image/jpeg">
+                        <img src=http://placeimg.com/{{ 640 + $i }}/360/any" class="object-fit-cover w-100 h-100" alt="dorplast Инвест">
                       </picture>
+                      <div class="carousel-caption p-3">
+                        <p>Посещение нащего предприятия сотрудников АО КТЖ</p>
+                      </div>
                     </div>
                   @endfor
                 </div>
@@ -661,12 +664,12 @@
               </div>
             </div>
             <div class="col-xxl-2 col-lg-3 position-relative min-elements">
-              <button class="btn border-0 text-primary w-100 d-none d-lg-block"><i class="icon-arrow-up-2"></i></button>
+              <button class="btn border-0 text-primary w-100 d-none d-lg-block" id="up-scroll"><i class="icon-arrow-up-2"></i></button>
               <div class="wrapper-min-img position-relative row flex-column flex-lg-row flex-wrap mt-3 mt-lg-0">
-                @for($i = 0; $i < 10; $i++)
+                @for($i = 0; $i < 5; $i++)
                   <div class="col-3 col-lg-12">
                     <div class="item">
-                      <img src="http://placeimg.com/640/360/any" alt="http://placeimg.com/640/360/any" class="img-fluid">
+                      <img src="http://placeimg.com/{{ 640 + $i }}/360/any" alt="http://placeimg.com/{{ 640 + $i }}/360/any" data-id="{{ $i }}" class="img-fluid">
                     </div>
                   </div>
                 @endfor
@@ -697,45 +700,80 @@
         console.log(el.to)
         counterFromSliderSecondSection.textContent = el.to + 1
       })
-
+      let mobile;
       if (window.innerWidth <= 992) {
+        mobile = true
         $('.item').height($('.item').width())
         $('.wrapper-min-img').height($('.item').height() + 30).css('overflow-x', 'auto')
         $('#slider-wr-js').height('auto')
         $('.wrapper-min-img > .col-3').height($('.item').height())
-        // $('.wrapper-min-img').height('auto')
       } else {
+        mobile = false
         $('.wrapper-min-img').height($('#info-for-slider').height()).css('overflow', 'hidden')
         $('.item').height($('.item').width())
         $('#slider-wr-js').height($('#info-for-slider').height())
         $('.wrapper-min-img > .col-3').height('auto')
       }
 
+      let sc = 0;
+      let maxI = 5;
+      let carouselEl = $('#eleventCarouselSection');
+      let c = new bootstrap.Carousel(carouselEl, {
+        interval: 5000
+      })
       $(window).resize(function () {
         if (window.innerWidth <= 992) {
+          mobile = true;
           $('.item').height($('.item').width())
           $('.wrapper-min-img').height($('.item').height() + 30).css('overflow-x', 'auto')
           $('#slider-wr-js').height('auto')
           $('.wrapper-min-img > .col-3').height($('.item').height())
           // $('.wrapper-min-img').height('auto')
+          if (mobile) {
+            $('.wrapper-min-img').scrollTop();
+            sc = 0
+            mobile = true
+          }
         } else {
           $('.wrapper-min-img').height($('#info-for-slider').height()).css('overflow', 'hidden')
           $('.item').height($('.item').width())
           $('#slider-wr-js').height($('#info-for-slider').height())
           $('.wrapper-min-img > .col-3').height('auto')
+          if (mobile) {
+            $('.wrapper-min-img').scrollTop();
+            $('.wrapper-min-img').css('--linerBottom', 0)
+            sc = 0
+            mobile = false
+          }
         }
       })
-      let sc = 0;
-      let i = 0;
-      let maxI = 3;
-
-      let mobil
 
       $('#down-scroll').click( function () {
-        sc += $('.item').height()
+        if ($('.item').height() * (maxI - 3) >= sc) {
+          sc += $('.item').height()
+          $('.wrapper-min-img')[0].scrollTo(0,  sc)
+          console.log(sc)
+          $('.wrapper-min-img').css('--linerBottom', '-' + sc + 'px')
+        }
+      })
+
+      $('#up-scroll').click( function () {
+        sc -= $('.item').height()
+        if (sc <= 0 )
+          sc = 0
+
+        if (sc > 0)
+          $('.wrapper-min-img').css('--linerBottom', '-' + sc + 'px')
+        else
+        $('.wrapper-min-img').css('--linerBottom', sc + 'px')
+
         $('.wrapper-min-img')[0].scrollTo(0,  sc)
-        console.log(sc)
-        $('.wrapper-min-img').css('--linerBottom', '-' + sc + 'px')
+      })
+
+      $('.wrapper-min-img .item img').click(function () {
+        c.to($(this).attr("data-id"))
+
+        console.log()
       })
     })
 
