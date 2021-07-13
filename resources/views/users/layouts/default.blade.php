@@ -16,6 +16,8 @@
 
   @yield('body')
 
+  @include('users.layouts.footer_default')
+
 {{--  Scripts  --}}
 
   <script  src="{{ asset('js/manifest.js') }}"></script>

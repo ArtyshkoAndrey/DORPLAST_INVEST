@@ -1,0 +1,23 @@
+footer {
+  background: #1D1D1B;
+
+  .nav {
+    a.nav-link {
+      font-size: 18px;
+      color: #878C90;
+
+      &:hover, &.active {
+        color: #2983EE;
+      }
+
+    }
+  }
+
+  .telephone {
+    font-size: 32px;
+  }
+  .phones {
+    color: #878C90;
+    font-size: 16px;
+  }
+}

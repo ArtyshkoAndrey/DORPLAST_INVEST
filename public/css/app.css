@@ -11410,17 +11410,44 @@ textarea.form-control-lg {
   box-shadow: 0px 6px 26px 5px rgba(41, 131, 238, 0.45);
 }
 
+footer {
+  background: #1D1D1B;
+}
+footer .nav a.nav-link {
+  font-size: 18px;
+  color: #878C90;
+}
+footer .nav a.nav-link:hover, footer .nav a.nav-link.active {
+  color: #2983EE;
+}
+footer .telephone {
+  font-size: 32px;
+}
+footer .phones {
+  color: #878C90;
+  font-size: 16px;
+}
+
 section.section-landing {
   margin-top: 44px;
+}
+section.section-landing:last-of-type {
+  margin-bottom: 44px;
 }
 @media (min-width: 768px) {
   section.section-landing {
     margin-top: 100px;
   }
+  section.section-landing:last-of-type {
+    margin-bottom: 100px;
+  }
 }
 @media (min-width: 1400px) {
   section.section-landing {
     margin-top: 120px;
+  }
+  section.section-landing:last-of-type {
+    margin-bottom: 120px;
   }
 }
 
@@ -11982,4 +12009,69 @@ section.section-landing {
 }
 #eleven-slider-section .btn:focus {
   box-shadow: none;
+}
+
+#twelfth-section .news h3, #twelfth-section .news .h3 {
+  font-weight: 700;
+  font-size: 18px;
+}
+@media (min-width: 768px) {
+  #twelfth-section .news h3, #twelfth-section .news .h3 {
+    font-size: 21px;
+  }
+}
+#twelfth-section .news .description {
+  color: #878C90;
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  #twelfth-section .news .description {
+    font-size: 18px;
+  }
+}
+
+#thirteen-section .wrapper-gray {
+  background: #F7F9FB;
+  border-radius: 16px;
+  padding: 30px;
+}
+@media (max-width: 768px) {
+  #thirteen-section .wrapper-gray {
+    border-radius: 0;
+  }
+}
+#thirteen-section .telephone {
+  font-size: 32px;
+}
+@media (min-width: 768px) {
+  #thirteen-section .telephone {
+    font-size: 40px;
+  }
+}
+#thirteen-section .phones {
+  color: #878C90;
+  font-size: 16px;
+}
+#thirteen-section .map {
+  border-radius: 16px;
+}
+@media (max-width: 768px) {
+  #thirteen-section .map {
+    border-radius: 0 !important;
+  }
+  #thirteen-section .map iframe {
+    border-radius: 0 !important;
+  }
+}
+@media (max-width: 992px) {
+  #thirteen-section .map {
+    height: 400px;
+    padding: 0;
+  }
+  #thirteen-section .map iframe {
+    height: 400px;
+  }
+}
+#thirteen-section .map iframe {
+  border-radius: 16px;
 }

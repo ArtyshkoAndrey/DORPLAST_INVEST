@@ -4,8 +4,7 @@
 
 @section('body')
 
-  <section class="container-md section-landing"
-           id="first-big-image">
+  <section class="container-md section-landing" id="first-big-image">
     <div class="row justify-content-center">
       <div class="col-12 px-0 px-md-3">
 
@@ -18,8 +17,7 @@
     </div>
   </section>
 
-  <section class="container-md section-landing"
-           id="second-about-section">
+  <section class="container-md section-landing" id="second-about-section">
     <div class="row align-items-stretch">
       <div class="col-md-6">
         <h1 class="text-primary">ТОО “Дорпласт Инвест”</h1>
@@ -83,8 +81,7 @@
     </div>
   </section>
 
-  <section class="container-md section-landing"
-           id="third-info-section">
+  <section class="container-md section-landing" id="third-info-section">
     <div class="row gy-5 gx-lg-5 align-items-stretch">
       <div class="col-lg-6 col-md-8">
 
@@ -615,7 +612,7 @@
     </div>
   </section>
 
-  <section class="container-md section-landing mb-5" id="eleven-slider-section">
+  <section class="container-md section-landing" id="eleven-slider-section">
 
     <div class="align-items-center row">
       <div class="col-xxl-5 col-lg-6 col-md-12" id="info-for-slider">
@@ -681,6 +678,87 @@
       </div>
     </div>
 
+  </section>
+
+  <section class="container-md section-landing" id="twelfth-section">
+    <div class="row gy-4 justify-content-center">
+      @for($i=0;$i<6;$i++)
+      <div class="col-lg-4 col-md-6 col-sm-6 col-12 news">
+        <div class="row">
+          <div class="col-12">
+            <h3>Современные технологии достигли такого уровня, что глубокий уровень.</h3>
+            <p class="description">Наличие опытной конструкторской базы и многолетнего сотрудничества с ведущими машиностроительными</p>
+          </div>
+          <div class="col-12">
+            <a href="#!" class="text-primary text-decoration-none d-flex align-items-center">Подробнее <i class="icon-arrow-right-2 ms-1 mt-1"></i></a>
+          </div>
+        </div>
+      </div>
+      @endfor
+    </div>
+  </section>
+
+  <section class="container-md section-landing" id="thirteen-section">
+    <div class="row gy-md-3 gy-0 gy-lg-0 align-items-stretch">
+      <div class="col-lg-6">
+        <div class="row wrapper-gray">
+          <div class="col-12">
+            <p class="text-primary">ТОО “Дорпласт Инвест”</p>
+          </div>
+          <div class="col-12">
+            <p class="telephone">+ 7(727) 328-54-41</p>
+            <div class="row phones">
+              <div class="col-auto">
+                <p>+7 (708) 672-73-33 </p>
+              </div>
+              <div class="col-auto">
+                <p>+7 (777) 355-73-04 </p>
+
+              </div>
+              <div class="col-auto">
+                <p>+7 (747) 878-47-40 </p>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mt-3">
+            <div class="row">
+              <div class="col-auto">
+                <img src="{{ asset('img/cil_fax.svg') }}" alt="cil_fax.svg" class="img-fluid">
+              </div>
+              <div class="col">
+                <p>+7 (72772) 35 297</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 mt-3">
+            <div class="row">
+              <div class="col-auto">
+                <img src="{{ asset('img/Location.svg') }}" alt="location" class="img-fluid">
+              </div>
+              <div class="col">
+                <p>Казахстан, Алматинская область, г.Капшагай г.,Заречный с/о, село Заречное, ул. Абая, участок № 67</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 mt-2">
+            <div class="row">
+              <div class="col-auto">
+                <img src="{{ asset('img/Message.svg') }}" alt="message" class="img-fluid">
+              </div>
+              <div class="col">
+                <a href="mailto:info@dorplastinvest.kz" class="text-decoration-none text-dark">info@dorplastinvest.kz</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 map">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Adadb76b401d65c6e16caed0350610aa803b008760a5c0116b986d9020f250681&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+      </div>
+    </div>
   </section>
 
 @endsection
