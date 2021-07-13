@@ -12156,7 +12156,7 @@ section.section-landing:first-of-type {
   }
 }
 #content h2, #content .h2 {
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 700;
 }
 @media (min-width: 768px) {
