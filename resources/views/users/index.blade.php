@@ -635,7 +635,7 @@
                 <div class="carousel-inner h-100">
                   @for($i = 0; $i < 5; $i++)
                     <div class="carousel-item {{ $i === 0 ? 'active' : '' }}">
-                      <img src=http://placeimg.com/{{ 640 + $i }}/360/any" class="object-fit-cover w-100 h-100" alt="dorplast Инвест">
+                      <img src="https://placeimg.com/{{ 640 + $i }}/360/any" class="object-fit-cover w-100 h-100" alt="dorplast Инвест">
                       <div class="carousel-caption p-3">
                         <p>Посещение нащего предприятия сотрудников АО КТЖ</p>
                       </div>
@@ -662,7 +662,7 @@
                 @for($i = 0; $i < 5; $i++)
                   <div class="col-3 col-lg-12">
                     <div class="item">
-                      <img src="http://placeimg.com/{{ 640 + $i }}/360/any" alt="http://placeimg.com/{{ 640 + $i }}/360/any" data-id="{{ $i }}" class="img-fluid">
+                      <img src="https://placeimg.com/{{ 640 + $i }}/360/any" alt="https://placeimg.com/{{ 640 + $i }}/360/any" data-id="{{ $i }}" class="img-fluid">
                     </div>
                   </div>
                 @endfor
