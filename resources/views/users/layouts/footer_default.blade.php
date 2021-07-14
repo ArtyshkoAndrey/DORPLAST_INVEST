@@ -24,17 +24,17 @@
       <div class="col-lg-5 col-md-6">
         <div class="row">
           <div class="col-12">
-            <a href="tel:{{ Setting::get('phone') }}" class="text-decoration-none text-white telephone">{{ Setting::get('phone') }}</a>
+            <a href="tel:{{ \Backpack\Settings\app\Models\Setting::get('phone') }}" class="text-decoration-none text-white telephone">{{ \Backpack\Settings\app\Models\Setting::get('phone') }}</a>
             <div class="row phones">
               <div class="col-auto">
-                <p>{{ Setting::get('phone_1') }}</p>
+                <p>{{ \Backpack\Settings\app\Models\Setting::get('phone_1') }}</p>
               </div>
               <div class="col-auto">
-                <p>{{ Setting::get('phone_2') }}</p>
+                <p>{{ \Backpack\Settings\app\Models\Setting::get('phone_2') }}</p>
 
               </div>
               <div class="col-auto">
-                <p>{{ Setting::get('phone_3') }}</p>
+                <p>{{ \Backpack\Settings\app\Models\Setting::get('phone_3') }}</p>
 
               </div>
             </div>
@@ -57,12 +57,12 @@
             <img src="{{ asset('img/Message_white.svg') }}" alt="message" class="img-fluid">
           </div>
           <div class="col">
-            <a href="mailto:{{ Setting::get('contact_email') }}" class="text-decoration-none text-white">{{ Setting::get('contact_email') }}</a>
+            <a href="mailto:{{ \Backpack\Settings\app\Models\Setting::get('contact_email') }}" class="text-decoration-none text-white">{{ \Backpack\Settings\app\Models\Setting::get('contact_email') }}</a>
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-md-12">
-        <p class="text-white">{{ Setting::get('location') }}</p>
+        <p class="text-white">{{ \Backpack\Settings\app\Models\Setting::get('location') }}</p>
       </div>
     </div>
   </div>

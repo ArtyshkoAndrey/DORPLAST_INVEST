@@ -238,7 +238,7 @@
               <h3 class="text-white fw-bold">Услуги компании Дорпласт инвест</h3>
             </div>
             <div class="col-xxl-12 col-md-6 col-12 mt-4 mt-md-0 mt-xxl-4">
-              <a href="{{ route('index') . '/' . Setting::get('file') }}" class="btn btn-outline-light d-block py-3 fw-bold" download="">Получить коммерческое предложение</a>
+              <a href="{{ route('index') . '/' . \Backpack\Settings\app\Models\Setting::get('file') }}" class="btn btn-outline-light d-block py-3 fw-bold" download="">Получить коммерческое предложение</a>
             </div>
           </div>
         </div>
@@ -358,7 +358,7 @@
           <li><span>подбор наиболее оптимальной конструкции изделия в соответствии с конкретными условиями его дальнейшей эксплуатации</span></li>
         </ul>
 
-        <a href="{{ route('index') . '/' . Setting::get('file') }}" class="btn btn-outline-gradient-primary mt-3 px-3 py-2" download>Получить коммерческое предложение</a>
+        <a href="{{ route('index') . '/' . \Backpack\Settings\app\Models\Setting::get('file') }}" class="btn btn-outline-gradient-primary mt-3 px-3 py-2" download>Получить коммерческое предложение</a>
       </div>
     </div>
    </div>
@@ -702,17 +702,17 @@
             <p class="text-primary">ТОО “Дорпласт Инвест”</p>
           </div>
           <div class="col-12">
-            <p class="telephone">{{ Setting::get('phone') }}</p>
+            <p class="telephone">{{ \Backpack\Settings\app\Models\Setting::get('phone') }}</p>
             <div class="row phones">
               <div class="col-auto">
-                <p>{{ Setting::get('phone_1') }}</p>
+                <p>{{ \Backpack\Settings\app\Models\Setting::get('phone_1') }}</p>
               </div>
               <div class="col-auto">
-                <p>{{ Setting::get('phone_2') }}</p>
+                <p>{{ \Backpack\Settings\app\Models\Setting::get('phone_2') }}</p>
 
               </div>
               <div class="col-auto">
-                <p>{{ Setting::get('phone_3') }}</p>
+                <p>{{ \Backpack\Settings\app\Models\Setting::get('phone_3') }}</p>
 
               </div>
             </div>
@@ -734,7 +734,7 @@
                 <img src="{{ asset('img/Location.svg') }}" alt="location" class="img-fluid">
               </div>
               <div class="col">
-                <p>{{ Setting::get('location') }}</p>
+                <p>{{ \Backpack\Settings\app\Models\Setting::get('location') }}</p>
               </div>
             </div>
           </div>
@@ -745,7 +745,7 @@
                 <img src="{{ asset('img/Message.svg') }}" alt="message" class="img-fluid">
               </div>
               <div class="col">
-                <a href="mailto:{{ Setting::get('contact_email') }}" class="text-decoration-none text-dark">{{ Setting::get('contact_email') }}</a>
+                <a href="mailto:{{ \Backpack\Settings\app\Models\Setting::get('contact_email') }}" class="text-decoration-none text-dark">{{ \Backpack\Settings\app\Models\Setting::get('contact_email') }}</a>
               </div>
             </div>
           </div>
