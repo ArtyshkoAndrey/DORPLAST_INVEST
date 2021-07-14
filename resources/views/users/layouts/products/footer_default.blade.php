@@ -24,17 +24,17 @@
       <div class="col-lg-5 col-md-6">
         <div class="row">
           <div class="col-12">
-            <a href="tel:+ 7(727) 328-54-41" class="text-decoration-none text-white telephone">+ 7(727) 328-54-41</a>
+            <a href="tel:{{ Setting::get('phone') }}" class="text-decoration-none text-white telephone">{{ Setting::get('phone') }}</a>
             <div class="row phones">
               <div class="col-auto">
-                <p>+7 (708) 672-73-33 </p>
+                <p>{{ Setting::get('phone_1') }}</p>
               </div>
               <div class="col-auto">
-                <p>+7 (777) 355-73-04 </p>
+                <p>{{ Setting::get('phone_2') }}</p>
 
               </div>
               <div class="col-auto">
-                <p>+7 (747) 878-47-40 </p>
+                <p>{{ Setting::get('phone_3') }}</p>
 
               </div>
             </div>
@@ -57,12 +57,12 @@
             <img src="{{ asset('img/Message_white.svg') }}" alt="message" class="img-fluid">
           </div>
           <div class="col">
-            <a href="mailto:info@dorplastinvest.kz" class="text-decoration-none text-white">info@dorplastinvest.kz</a>
+            <a href="mailto:{{ Setting::get('contact_email') }}" class="text-decoration-none text-white">{{ Setting::get('contact_email') }}</a>
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-md-12">
-        <p class="text-white">Казахстан, Алматинская область, г.Капшагай г.,Заречный с/о, село Заречное, ул. Абая, участок № 67</p>
+        <p class="text-white">{{ Setting::get('location') }}</p>
       </div>
     </div>
   </div>

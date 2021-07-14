@@ -11,19 +11,19 @@
       </div>
 
       <div class="col-auto ml-auto mt-lg-0 mt-md-4 d-none d-md-block order-md-last order-lg-2 border-end border-secondary">
-        <a href="mailto:info@dorplastinvest.kz" class="nav-link ps-md-0 text-dark">
-          info@dorplastinvest.kz
+        <a href="mailto:{{Setting::get('contact_email')}}" class="nav-link ps-md-0 text-dark">
+          {{Setting::get('contact_email')}}
         </a>
       </div>
 
       <div class="col-auto mt-lg-0 mt-md-4 d-none d-md-block order-md-last order-lg-3">
-        <a href="tel:+77273285441" class="nav-link text-dark">
-          +7(727) 328-54-41
+        <a href="tel:{{ Setting::get('phone') }}" class="nav-link text-dark">
+          {{ Setting::get('phone') }}
         </a>
       </div>
 
       <div class="col-auto d-none d-md-block order-lg-4">
-        <a href="#" class="btn btn-outline-gradient-primary">
+        <a href="{{ route('index') . '/' . Setting::get('file') }}" class="btn btn-outline-gradient-primary" download>
           Получить  коммерческое предложение
         </a>
       </div>
@@ -62,19 +62,19 @@
       </div>
       <div class="row gx-0 d-block d-md-none" id="secondary-mobile-links">
         <div class="col-12 px-0">
-          <a href="mailto:info@dorplastinvest.kz" class="nav-link px-0">
-            info@dorplastinvest.kz
+          <a href="mailto:{{ Setting::get('contact_email') }}" class="nav-link px-0">
+            {{ Setting::get('contact_email') }}
           </a>
         </div>
 
         <div class="col-12 px-0">
-          <a href="tel:+77273285441" class="nav-link px-0">
-            +7(727) 328-54-41
+          <a href="tel:{{ Setting::get('phone') }}" class="nav-link px-0">
+            {{ Setting::get('phone') }}
           </a>
         </div>
 
         <div class="col-12 px-0">
-          <a href="#" class="btn btn-outline-gradient-primary d-block">
+          <a href="{{ route('index') . '/' . Setting::get('file') }}" class="btn btn-outline-gradient-primary d-block" download>
             Получить  коммерческое предложение
           </a>
         </div>
