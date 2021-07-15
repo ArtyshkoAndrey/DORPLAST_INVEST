@@ -3,3 +3,6 @@
 <li class='nav-item'><a class='nav-link' href='{{ backpack_url('setting') }}'><i class="las la-cog nav-icon"></i> Настройки</a></li>
 
 <li class="nav-item"><a class="nav-link" href="{{ backpack_url('elfinder') }}"><i class="nav-icon la la-files-o"></i> <span>{{ trans('backpack::crud.file_manager') }}</span></a></li>
+<li class='nav-item'><a class='nav-link' href='{{ backpack_url('page') }}'><i class='nav-icon la la-file-o'></i> <span>Страницы</span></a></li>
+
+<li class='nav-item'><a class='nav-link' href='{{ backpack_url('product') }}'><i class='nav-icon la la-boxes'></i> Товары</a></li>

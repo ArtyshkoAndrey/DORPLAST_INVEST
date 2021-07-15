@@ -5,7 +5,7 @@
       {{--        Brand Name  --}}
       <div class="col-lg-2 col-md-3 col-5 me-auto">
         <a class="navbar-brand text-uppercase text-wrap fw-bolder d-flex"
-           href="{{ route('index') }}">
+           href="{{ url('/') }}">
           <img src="{{ asset('img/logo.svg') }}" alt="{{ config('app.name') }}" class="img-fluid">
         </a>
       </div>
@@ -25,7 +25,7 @@
       </div>
 
       <div class="col-auto d-none d-md-block order-lg-4">
-        <a href="{{ route('index') . '/' . \Backpack\Settings\app\Models\Setting::get('file') }}" class="btn btn-outline-gradient-primary" download>
+        <a href="{{ url('/') . '/' . \Backpack\Settings\app\Models\Setting::get('file') }}" class="btn btn-outline-gradient-primary" download>
           Получить  коммерческое предложение
         </a>
       </div>
@@ -40,25 +40,25 @@
     <div class="container-xxl container-md my-2 mx-0 mx-xxl-auto mx-md-auto mb-0">
       <div class="row gx-0 gx-lg-4 flex-column flex-lg-row mx-0 mx-lg-1" id="links">
         <div class="col-auto">
-          <a href="{{ route('index') }}#second-about-section" class="nav-link px-0">О компании</a>
+          <a href="{{ url('/') }}#second-about-section" class="nav-link px-0">О компании</a>
         </div>
         <div class="col-auto">
-          <a href="{{ route('index') }}#five-info-section" class="nav-link px-0">Услуги</a>
+          <a href="{{ url('/') }}#five-info-section" class="nav-link px-0">Услуги</a>
         </div>
         <div class="col-auto">
-          <a href="{{ route('index') }}#six-info-section" class="nav-link px-0">Производство</a>
+          <a href="{{ url('/') }}#six-info-section" class="nav-link px-0">Производство</a>
         </div>
         <div class="col-auto">
-          <a href="{{ route('index') }}#eight-poesd-section" class="nav-link px-0">Продукция</a>
+          <a href="{{ url('/') }}#eight-poesd-section" class="nav-link px-0">Продукция</a>
         </div>
         <div class="col-auto">
-          <a href="{{ route('index') }}#eleven-slider-section" class="nav-link px-0">Галерея</a>
+          <a href="{{ url('/') }}#eleven-slider-section" class="nav-link px-0">Галерея</a>
         </div>
         <div class="col-auto">
-          <a href="{{ route('index') }}#twelfth-section" class="nav-link px-0">Статьи</a>
+          <a href="{{ url('/') }}#twelfth-section" class="nav-link px-0">Статьи</a>
         </div>
         <div class="col-auto">
-          <a href="{{ route('index') }}#thirteen-section" class="nav-link px-0">Контакты</a>
+          <a href="{{ url('/') }}#thirteen-section" class="nav-link px-0">Контакты</a>
         </div>
         <hr class="d-block d-md-none m-0">
       </div>
@@ -78,7 +78,7 @@
         </div>
 
         <div class="col-12 mt-4  px-0">
-          <a href="{{ route('index') . '/' . \Backpack\Settings\app\Models\Setting::get('file') }}" class="btn btn-outline-gradient-primary d-block" download>
+          <a href="{{ url('/') . '/' . \Backpack\Settings\app\Models\Setting::get('file') }}" class="btn btn-outline-gradient-primary d-block" download>
             Получить  коммерческое предложение
           </a>
         </div>

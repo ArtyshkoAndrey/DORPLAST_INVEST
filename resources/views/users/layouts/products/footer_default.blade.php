@@ -6,13 +6,13 @@
       </div>
       <div class="col-lg d-none d-lg-flex justify-content-end">
         <nav class="nav">
-          <a class="nav-link" href="{{ route('index') }}#second-about-section">О компании</a>
-          <a class="nav-link" href="{{ route('index') }}#five-info-section">Услуги</a>
-          <a class="nav-link" href="{{ route('index') }}#six-info-section">Производство</a>
-          <a class="nav-link" href="{{ route('index') }}#eight-poesd-section">Продукция</a>
-          <a class="nav-link" href="{{ route('index') }}#eleven-slider-section">Галерея</a>
-          <a class="nav-link" href="{{ route('index') }}#twelfth-section">Статьи</a>
-          <a class="nav-link" href="{{ route('index') }}#thirteen-section">Контакты</a>
+          <a class="nav-link" href="{{ url('/') }}#second-about-section">О компании</a>
+          <a class="nav-link" href="{{ url('/') }}#five-info-section">Услуги</a>
+          <a class="nav-link" href="{{ url('/') }}#six-info-section">Производство</a>
+          <a class="nav-link" href="{{ url('/') }}#eight-poesd-section">Продукция</a>
+          <a class="nav-link" href="{{ url('/') }}#eleven-slider-section">Галерея</a>
+          <a class="nav-link" href="{{ url('/') }}#twelfth-section">Статьи</a>
+          <a class="nav-link" href="{{ url('/') }}#thirteen-section">Контакты</a>
         </nav>
       </div>
     </div>

@@ -5,7 +5,7 @@
       {{--        Brand Name  --}}
       <div class="col-lg-2 col-md-3 col-5 me-auto">
         <a class="navbar-brand text-uppercase text-wrap fw-bolder d-flex"
-           href="{{ route('index') }}">
+           href="{{ url('/') }}">
           <img src="{{ asset('img/logo.svg') }}" alt="{{ config('app.name') }}" class="img-fluid">
         </a>
       </div>
@@ -25,7 +25,7 @@
       </div>
 
       <div class="col-auto d-none d-md-block order-lg-4">
-        <a href="{{ route('index') . '/' . \Backpack\Settings\app\Models\Setting::get('file') }}" class="btn btn-outline-gradient-primary" download>
+        <a href="{{ url('/') . '/' . \Backpack\Settings\app\Models\Setting::get('file') }}" class="btn btn-outline-gradient-primary" download>
           Получить  коммерческое предложение
         </a>
       </div>
@@ -78,7 +78,7 @@
         </div>
 
         <div class="col-12 mt-4 px-0">
-          <a href="{{ route('index') . '/' . \Backpack\Settings\app\Models\Setting::get('file') }}" class="btn btn-outline-gradient-primary d-block" download>
+          <a href="{{ url('/') . '/' . \Backpack\Settings\app\Models\Setting::get('file') }}" class="btn btn-outline-gradient-primary d-block" download>
             Получить  коммерческое предложение
           </a>
         </div>
