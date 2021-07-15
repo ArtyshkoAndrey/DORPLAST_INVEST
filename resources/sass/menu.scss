@@ -6,8 +6,16 @@
   right: 0;
   z-index: 1000;
 
+  i {
+    font-size: 20px!important;
+  }
+
   *, .btn {
     font-size: 16px !important;
+  }
+
+  .border-custom {
+    border-right: 1px solid #CFD4DB;
   }
 
   @include respond-to(md) {
@@ -33,7 +41,11 @@
       width: 100vw;
       position: absolute;
       left: 0;
-      bottom: 29%;
+      bottom: 34%;
+
+      @media screen and (max-width: 370px) {
+        bottom: 38%;
+      }
     }
 
     @include respond-to(lg) {

@@ -21,7 +21,7 @@
 
   <div class="container-md pt-3">
     <div class="row">
-      <div class="col-lg-5 col-md-6">
+      <div class="col-xxl-5 col-lg-4 col-md-6">
         <div class="row">
           <div class="col-12">
             <a href="tel:{{ \Backpack\Settings\app\Models\Setting::get('phone') }}" class="text-decoration-none text-white telephone">{{ \Backpack\Settings\app\Models\Setting::get('phone') }}</a>
@@ -41,27 +41,27 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-6 text-white">
+      <div class="col-xxl-3 col-lg-4 col-md-6 text-white">
 
-        <div class="row">
+        <div class="row align-items-center">
           <div class="col-auto">
-            <img src="{{ asset('img/cil_fax_white.svg') }}" alt="cil_fax.svg" class="img-fluid">
+            <i class="iconly-l-fax"></i>
           </div>
           <div class="col">
-            <p>+7 (72772) 35 297</p>
+            <p class="mb-0">+7 (72772) 35 297</p>
           </div>
         </div>
 
-        <div class="row text-white">
+        <div class="row align-items-center text-white">
           <div class="col-auto">
-            <img src="{{ asset('img/Message_white.svg') }}" alt="message" class="img-fluid">
+            <i class="iconly-l-message text-white"></i>
           </div>
           <div class="col">
             <a href="mailto:{{ \Backpack\Settings\app\Models\Setting::get('contact_email') }}" class="text-decoration-none text-white">{{ \Backpack\Settings\app\Models\Setting::get('contact_email') }}</a>
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-12">
+      <div class="col-lg-4 mt-3 mt-lg-0 col-md-12">
         <p class="text-white">{{ \Backpack\Settings\app\Models\Setting::get('location') }}</p>
       </div>
     </div>

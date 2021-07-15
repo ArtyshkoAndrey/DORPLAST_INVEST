@@ -7,19 +7,15 @@
   <section class="container-md section-landing" id="first-big-image">
     <div class="row justify-content-center">
       <div class="col-12 px-0 px-md-3">
-
-        <picture>
-          <source srcset="{{ asset('img/webp/dorplast-big-min.webp') }}" type="image/webp">
-          <source srcset="{{ asset('img/dorplast-big-min.jpg') }}" type="image/jpeg">
-          <img src="{{ asset('img/dorplast-big-min.jpg') }}" class="img-fluid w-100" alt="dorplast Инвест">
-        </picture>
+        <img src="{{ asset('img/dorplast-big-min.jpg') }}" class="img-fluid w-100 d-none d-md-block" alt="dorplast Инвест">
+        <img src="{{ asset('img/Mainphoto 1.jpg') }}" class="img-fluid w-100 d-block d-md-none" alt="Mainphoto 1.jpg">
       </div>
     </div>
   </section>
 
   <section class="container-md section-landing" id="second-about-section">
     <div class="row align-items-stretch">
-      <div class="col-md-6">
+      <div class="col-md-7">
         <h1 class="text-primary">ТОО “Дорпласт Инвест”</h1>
 
         <h2>
@@ -31,12 +27,12 @@
             <a href="#!"
                class="btn btn-gradient-primary mt-3 px-4 py-2">
               Посмотреть продукцию
-              <i class="icon-arrow-right-2 ps-5 h5"></i>
+              <i class="iconly-l-arrow-right-2 ps-5 h5"></i>
             </a>
           </div>
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-5">
         <div id="carouselSecondSection"
              class="carousel slide h-100 row mt-3 mt-md-0"
              data-bs-ride="carousel"
@@ -64,7 +60,7 @@
                   type="button"
                   data-bs-target="#carouselSecondSection"
                   data-bs-slide="prev">
-            <span class="icon-arrow-left-3 text-primary display-6"
+            <span class="iconly-l-arrow-left text-primary"
                   aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
@@ -72,7 +68,7 @@
                   type="button"
                   data-bs-target="#carouselSecondSection"
                   data-bs-slide="next">
-            <span class="icon-arrow-right-3 text-primary display-6"
+            <span class="iconly-l-arrow-right text-primary"
                   aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
@@ -159,12 +155,12 @@
           </div>
           <div class="wrapper-control">
             <button class="carousel-control-prev" type="button" data-bs-target="#thirdCarouselSection" data-bs-slide="prev">
-            <span class="icon-arrow-left-3 text-primary"
+            <span class="iconly-l-arrow-left text-primary"
                   aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#thirdCarouselSection" data-bs-slide="next">
-            <span class="icon-arrow-right-3 text-primary"
+            <span class="iconly-l-arrow-right text-primary"
                   aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
@@ -175,8 +171,8 @@
   </section>
 
   <section class="container-md section-landing" id="four-future-section">
-    <div class="row px-3 py-5 px-md-5">
-      <div class="col-lg-7 pb-3">
+    <div class="row px-sm-3 px-0 p py-5 px-md-5">
+      <div class="col-lg-7 d-flex align-items-center pb-3">
         <div class="row">
           <div class="col-12">
             <p class="text-primary">Наша цель – это Ваш экономический успех!</p>
@@ -238,7 +234,7 @@
               <h3 class="text-white fw-bold">Услуги компании Дорпласт инвест</h3>
             </div>
             <div class="col-xxl-12 col-md-6 col-12 mt-4 mt-md-0 mt-xxl-4">
-              <a href="{{ route('index') . '/' . \Backpack\Settings\app\Models\Setting::get('file') }}" class="btn btn-outline-light d-block py-3 fw-bold" download="">Получить коммерческое предложение</a>
+              <a href="{{ route('index') . '/' . \Backpack\Settings\app\Models\Setting::get('file') }}" class="btn btn-outline-light d-block py-3" download="">Получить коммерческое предложение</a>
             </div>
           </div>
         </div>
@@ -352,13 +348,13 @@
       <div class="col-lg-6 col-12" id="column-gray">
         <h5 class="fw-bold">Мы обеспечим</h5>
 
-        <ul class="bar px-0 pe-5">
+        <ul class="bar px-0 pe-2 pe-md-5">
           <li><span>профессиональный подход к каждому предложенному проекту с учетом всех возможных вариантов его реализации</span></li>
           <li><span>подбор качественных композиционных материалов, имеющие соответствующие сертификаты</span></li>
           <li><span>подбор наиболее оптимальной конструкции изделия в соответствии с конкретными условиями его дальнейшей эксплуатации</span></li>
         </ul>
 
-        <a href="{{ route('index') . '/' . \Backpack\Settings\app\Models\Setting::get('file') }}" class="btn btn-outline-gradient-primary mt-3 px-3 py-2" download>Получить коммерческое предложение</a>
+        <a href="{{ route('index') . '/' . \Backpack\Settings\app\Models\Setting::get('file') }}" class="btn btn-outline-gradient-primary mt-3 px-3 py-2 d-block d-md-inline-flex" download>Получить коммерческое предложение</a>
       </div>
     </div>
    </div>
@@ -406,7 +402,7 @@
           <div class="col-12 mt-3">
             <h5>Сырье для производства нашей продукции</h5>
             <hr class="bg-light my-4">
-            <p>Мы перерабатываем ПЭТ бутылки и изготавливаем из него сырье для изготовления нашей продукции</p>
+            <p class="text-start">Мы перерабатываем ПЭТ бутылки и изготавливаем из него сырье для изготовления нашей продукции</p>
           </div>
         </div>
       </div>
@@ -480,135 +476,26 @@
     </div>
 
     <div class="row justify-content-center justify-content-md-start" id="products">
-      <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-11 product">
-        <div class="row">
-          <div class="col-12">
-            <img src="{{ asset('img/product.jpg') }}" class="img-fluid" alt="product">
-          </div>
-          <div class="col-12 name">
-            <p>ПЭТ лента</p>
-          </div>
-          <div class="col-12 description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur, blanditiis commodi dolor officia provident tempora. Et explicabo fugit odit?
-          </div>
-          <div class="col-12">
-            <a href="#!" class="text-primary text-decoration-none d-flex align-items-center">Подробнее <i class="icon-arrow-right-2 ms-1 mt-1"></i></a>
-          </div>
-        </div>
-      </div>
 
-      <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-11 product">
-        <div class="row">
-          <div class="col-12">
-            <img src="{{ asset('img/product.jpg') }}" class="img-fluid" alt="product">
-          </div>
-          <div class="col-12 name">
-            <p>ПЭТ лента</p>
-          </div>
-          <div class="col-12 description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur, blanditiis commodi dolor officia provident tempora. Et explicabo fugit odit?
-          </div>
-          <div class="col-12">
-            <a href="#!" class="text-primary text-decoration-none d-flex align-items-center">Подробнее <i class="icon-arrow-right-2 ms-1 mt-1"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-11 product">
-        <div class="row">
-          <div class="col-12">
-            <img src="{{ asset('img/product.jpg') }}" class="img-fluid" alt="product">
-          </div>
-          <div class="col-12 name">
-            <p>ПЭТ лента</p>
-          </div>
-          <div class="col-12 description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur, blanditiis commodi dolor officia provident tempora. Et explicabo fugit odit?
-          </div>
-          <div class="col-12">
-            <a href="#!" class="text-primary text-decoration-none d-flex align-items-center">Подробнее <i class="icon-arrow-right-2 ms-1 mt-1"></i></a>
+      @for($i = 0; $i <= 7; $i++)
+        <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-11 product">
+          <div class="row">
+            <div class="col-12">
+              <img src="{{ asset('img/product.jpg') }}" class="img-fluid" alt="product">
+            </div>
+            <div class="col-12 name">
+              <p>ПЭТ лента</p>
+            </div>
+            <div class="col-12 description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur, blanditiis commodi dolor officia provident tempora. Et explicabo fugit odit?
+            </div>
+            <div class="col-12">
+              <a href="#!" class="text-primary text-decoration-none d-flex align-items-center">Подробнее <i class="iconly-l-arrow-right-2 ms-1"></i></a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-11 product">
-        <div class="row">
-          <div class="col-12">
-            <img src="{{ asset('img/product.jpg') }}" class="img-fluid" alt="product">
-          </div>
-          <div class="col-12 name">
-            <p>ПЭТ лента</p>
-          </div>
-          <div class="col-12 description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur, blanditiis commodi dolor officia provident tempora. Et explicabo fugit odit?
-          </div>
-          <div class="col-12">
-            <a href="#!" class="text-primary text-decoration-none d-flex align-items-center">Подробнее <i class="icon-arrow-right-2 ms-1 mt-1"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-11 product">
-        <div class="row">
-          <div class="col-12">
-            <img src="{{ asset('img/product.jpg') }}" class="img-fluid" alt="product">
-          </div>
-          <div class="col-12 name">
-            <p>ПЭТ лента</p>
-          </div>
-          <div class="col-12 description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur, blanditiis commodi dolor officia provident tempora. Et explicabo fugit odit?
-          </div>
-          <div class="col-12">
-            <a href="#!" class="text-primary text-decoration-none d-flex align-items-center">Подробнее <i class="icon-arrow-right-2 ms-1 mt-1"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-11 product">
-        <div class="row">
-          <div class="col-12">
-            <img src="{{ asset('img/product.jpg') }}" class="img-fluid" alt="product">
-          </div>
-          <div class="col-12 name">
-            <p>ПЭТ лента</p>
-          </div>
-          <div class="col-12 description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur, blanditiis commodi dolor officia provident tempora. Et explicabo fugit odit?
-          </div>
-          <div class="col-12">
-            <a href="#!" class="text-primary text-decoration-none d-flex align-items-center">Подробнее <i class="icon-arrow-right-2 ms-1 mt-1"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-11 product">
-        <div class="row">
-          <div class="col-12">
-            <img src="{{ asset('img/product.jpg') }}" class="img-fluid" alt="product">
-          </div>
-          <div class="col-12 name">
-            <p>ПЭТ лента</p>
-          </div>
-          <div class="col-12 description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur, blanditiis commodi dolor officia provident tempora. Et explicabo fugit odit?
-          </div>
-          <div class="col-12">
-            <a href="#!" class="text-primary text-decoration-none d-flex align-items-center">Подробнее <i class="icon-arrow-right-2 ms-1 mt-1"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-11 product">
-        <div class="row">
-          <div class="col-12">
-            <img src="{{ asset('img/product.jpg') }}" class="img-fluid" alt="product">
-          </div>
-          <div class="col-12 name">
-            <p>ПЭТ лента</p>
-          </div>
-          <div class="col-12 description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur, blanditiis commodi dolor officia provident tempora. Et explicabo fugit odit?
-          </div>
-          <div class="col-12">
-            <a href="#!" class="text-primary text-decoration-none d-flex align-items-center">Подробнее <i class="icon-arrow-right-2 ms-1 mt-1"></i></a>
-          </div>
-        </div>
-      </div>
+      @endfor
+
     </div>
   </section>
 
@@ -644,12 +531,12 @@
                 </div>
                 <div class="wrapper-control">
                   <button class="carousel-control-prev" type="button" data-bs-target="#eleventCarouselSection" data-bs-slide="prev">
-                    <span class="icon-arrow-left-3 text-primary"
+                    <span class="iconly-l-arrow-left text-primary"
                     aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                   </button>
                   <button class="carousel-control-next" type="button" data-bs-target="#eleventCarouselSection" data-bs-slide="next">
-                    <span class="icon-arrow-right-3 text-primary"
+                    <span class="iconly-l-arrow-right text-primary"
                     aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                   </button>
@@ -657,7 +544,7 @@
               </div>
             </div>
             <div class="col-xxl-2 col-lg-3 position-relative min-elements">
-              <button class="btn border-0 text-primary w-100 d-none d-lg-block" id="up-scroll"><i class="icon-arrow-up-2"></i></button>
+              <button class="btn border-0 text-primary w-100 d-none d-lg-block" id="up-scroll"><i class="iconly-l-arrow-up-2"></i></button>
               <div class="wrapper-min-img position-relative row flex-column flex-lg-row flex-wrap mt-3 mt-lg-0">
                 @for($i = 0; $i < 5; $i++)
                   <div class="col-3 col-lg-12">
@@ -667,7 +554,7 @@
                   </div>
                 @endfor
               </div>
-              <button class="btn border-0 text-primary w-100 d-none d-lg-block" id="down-scroll"><i class="icon-arrow-down-2"></i></button>
+              <button class="btn border-0 text-primary w-100 d-none d-lg-block" id="down-scroll"><i class="iconly-l-arrow-down-2"></i></button>
             </div>
           </div>
         </div>
@@ -686,7 +573,7 @@
             <p class="description">Наличие опытной конструкторской базы и многолетнего сотрудничества с ведущими машиностроительными</p>
           </div>
           <div class="col-12">
-            <a href="#!" class="text-primary text-decoration-none d-flex align-items-center">Подробнее <i class="icon-arrow-right-2 ms-1 mt-1"></i></a>
+            <a href="#!" class="text-primary text-decoration-none d-flex align-items-center">Подробнее <i class="iconly-l-arrow-right-2 ms-1"></i></a>
           </div>
         </div>
       </div>
@@ -718,12 +605,12 @@
             </div>
           </div>
           <div class="col-12 mt-3">
-            <div class="row">
+            <div class="row align-items-center">
               <div class="col-auto">
-                <img src="{{ asset('img/cil_fax.svg') }}" alt="cil_fax.svg" class="img-fluid">
+                <i class="iconly-l-fax"></i>
               </div>
               <div class="col">
-                <p>+7 (72772) 35 297</p>
+                <p class="mb-0">+7 (72772) 35 297</p>
               </div>
             </div>
           </div>
@@ -731,7 +618,7 @@
           <div class="col-12 mt-3">
             <div class="row">
               <div class="col-auto">
-                <img src="{{ asset('img/Location.svg') }}" alt="location" class="img-fluid">
+                <i class="iconly-l-location"></i>
               </div>
               <div class="col">
                 <p>{{ \Backpack\Settings\app\Models\Setting::get('location') }}</p>
@@ -740,9 +627,9 @@
           </div>
 
           <div class="col-12 mt-2">
-            <div class="row">
+            <div class="row align-items-center">
               <div class="col-auto">
-                <img src="{{ asset('img/Message.svg') }}" alt="message" class="img-fluid">
+                <i class="iconly-l-message"></i>
               </div>
               <div class="col">
                 <a href="mailto:{{ \Backpack\Settings\app\Models\Setting::get('contact_email') }}" class="text-decoration-none text-dark">{{ \Backpack\Settings\app\Models\Setting::get('contact_email') }}</a>

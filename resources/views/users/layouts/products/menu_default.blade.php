@@ -11,13 +11,15 @@
       </div>
 
       <div class="col-auto ml-auto mt-lg-0 mt-md-4 d-none d-md-block order-md-last order-lg-2 border-end border-secondary">
-        <a href="mailto:{{ \Backpack\Settings\app\Models\Setting::get('contact_email') }}" class="nav-link ps-md-0 text-dark">
-          {{ \Backpack\Settings\app\Models\Setting::get('contact_email') }}
+        <a href="mailto:{{\Backpack\Settings\app\Models\Setting::get('contact_email')}}" class="nav-link ps-md-0 text-dark d-flex align-items-center">
+          <i class="iconly-b-message text-primary"></i>
+          {{\Backpack\Settings\app\Models\Setting::get('contact_email')}}
         </a>
       </div>
 
       <div class="col-auto mt-lg-0 mt-md-4 d-none d-md-block order-md-last order-lg-3">
-        <a href="tel:{{ \Backpack\Settings\app\Models\Setting::get('phone') }}" class="nav-link text-dark">
+        <a href="tel:{{ \Backpack\Settings\app\Models\Setting::get('phone') }}" class="nav-link text-dark d-flex align-items-center">
+          <i class="iconly-b-call text-primary"></i>
           {{ \Backpack\Settings\app\Models\Setting::get('phone') }}
         </a>
       </div>
@@ -63,17 +65,19 @@
       <div class="row gx-0 d-block d-md-none" id="secondary-mobile-links">
         <div class="col-12 px-0">
           <a href="mailto:{{ \Backpack\Settings\app\Models\Setting::get('contact_email') }}" class="nav-link px-0">
+            <i class="iconly-b-message text-primary"></i>
             {{ \Backpack\Settings\app\Models\Setting::get('contact_email') }}
           </a>
         </div>
 
         <div class="col-12 px-0">
           <a href="tel:{{ \Backpack\Settings\app\Models\Setting::get('phone') }}" class="nav-link px-0">
+            <i class="iconly-b-call text-primary"></i>
             {{ \Backpack\Settings\app\Models\Setting::get('phone') }}
           </a>
         </div>
 
-        <div class="col-12 px-0">
+        <div class="col-12 mt-4  px-0">
           <a href="{{ route('index') . '/' . \Backpack\Settings\app\Models\Setting::get('file') }}" class="btn btn-outline-gradient-primary d-block" download>
             Получить  коммерческое предложение
           </a>
