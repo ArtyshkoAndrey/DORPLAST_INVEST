@@ -508,14 +508,14 @@
             <div class="col-xxl-10 col-lg-9" id="slider-wr-js">
               <div id="eleventCarouselSection" class="carousel slide h-100" data-bs-ride="carousel">
                 <div class="carousel-inner h-100">
-                  @for($i = 0; $i < 5; $i++)
+                  @foreach(\App\Models\Images::all() as $i => $image)
                     <div class="carousel-item {{ $i === 0 ? 'active' : '' }}">
-                      <img src="https://placeimg.com/{{ 640 + $i }}/360/any" class="object-fit-cover w-100 h-100" alt="dorplast Инвест">
+                      <img src="{{ $image->image }}" class="object-fit-cover w-100 h-100" alt="dorplast Инвест">
                       <div class="carousel-caption p-3">
-                        <p>Посещение нащего предприятия сотрудников АО КТЖ</p>
+                        <p>{{ $image->title }}</p>
                       </div>
                     </div>
-                  @endfor
+                  @endforeach
                 </div>
                 <div class="wrapper-control">
                   <button class="carousel-control-prev" type="button" data-bs-target="#eleventCarouselSection" data-bs-slide="prev">
@@ -534,13 +534,13 @@
             <div class="col-xxl-2 col-lg-3 position-relative min-elements">
               <button class="btn border-0 text-primary w-100 d-none d-lg-block" id="up-scroll"><i class="iconly-l-arrow-up-2"></i></button>
               <div class="wrapper-min-img position-relative row flex-column flex-lg-row flex-wrap mt-3 mt-lg-0">
-                @for($i = 0; $i < 5; $i++)
+                @foreach(\App\Models\Images::all() as $i => $image)
                   <div class="col-3 col-lg-12">
                     <div class="item">
-                      <img src="https://placeimg.com/{{ 640 + $i }}/360/any" alt="https://placeimg.com/{{ 640 + $i }}/360/any" data-id="{{ $i }}" class="img-fluid">
+                      <img src="{{ $image->image }}" alt="{{ $image->image }}" data-id="{{ $i }}" class="img-fluid">
                     </div>
                   </div>
-                @endfor
+                @endforeach
               </div>
               <button class="btn border-0 text-primary w-100 d-none d-lg-block" id="down-scroll"><i class="iconly-l-arrow-down-2"></i></button>
             </div>
@@ -552,20 +552,20 @@
   </section>
 
   <section class="container-md section-landing" id="twelfth-section">
-    <div class="row gy-4 justify-content-center">
-      @for($i=0;$i<6;$i++)
+    <div class="row gy-4">
+      @foreach(\App\Models\Newses::orderBy('id', 'desc')->take(6)->get() as $news)
       <div class="col-lg-4 col-md-6 col-sm-6 col-12 news">
         <div class="row">
           <div class="col-12">
-            <h3>Современные технологии достигли такого уровня, что глубокий уровень.</h3>
-            <p class="description">Наличие опытной конструкторской базы и многолетнего сотрудничества с ведущими машиностроительными</p>
+            <h3>{{ $news->title }}</h3>
+            <p class="description">{{ $news->description }}</p>
           </div>
           <div class="col-12">
-            <a href="#!" class="text-primary text-decoration-none d-flex align-items-center">Подробнее <i class="iconly-l-arrow-right-2 ms-1"></i></a>
+            <a href="{{ route('news', ['id' => $news->id]) }}" class="text-primary text-decoration-none d-flex align-items-center">Подробнее <i class="iconly-l-arrow-right-2 ms-1"></i></a>
           </div>
         </div>
       </div>
-      @endfor
+      @endforeach
     </div>
   </section>
 

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Newses;
 use App\Models\Product;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
@@ -23,6 +24,12 @@ class HomeController extends Controller
   {
     $product = Product::find($id);
     return view('users.product', compact('product'));
+  }
+
+  public function news (int $id): Factory|View|Application
+  {
+    $news = Newses::find($id);
+    return view('users.news', compact('news'));
   }
 
 }

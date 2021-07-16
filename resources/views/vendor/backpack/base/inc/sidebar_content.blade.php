@@ -6,3 +6,7 @@
 <li class='nav-item'><a class='nav-link' href='{{ backpack_url('page') }}'><i class='nav-icon la la-file-o'></i> <span>Страницы</span></a></li>
 
 <li class='nav-item'><a class='nav-link' href='{{ backpack_url('product') }}'><i class='nav-icon la la-boxes'></i> Товары</a></li>
+
+<li class='nav-item'><a class='nav-link' href='{{ backpack_url('newses') }}'><i class='nav-icon la la-paperclip'></i> Новости</a></li>
+
+<li class='nav-item'><a class='nav-link' href='{{ backpack_url('images') }}'><i class='nav-icon la la-images'></i> Галерея</a></li>

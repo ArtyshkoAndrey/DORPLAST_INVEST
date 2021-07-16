@@ -1,6 +1,6 @@
 @extends('users.layouts.products.default')
 
-@section('title', 'Страница товара')
+@section('title', $product->title)
 
 @section('body')
   <section class="container-md section-landing" id="section-title-with-image">
