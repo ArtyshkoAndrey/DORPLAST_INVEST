@@ -16,7 +16,7 @@ use Illuminate\Contracts\View\View;
 
 class PageController extends Controller
 {
-  public function index($slug, $subs = null): Factory|View|Application
+  public function index($slug, $subs = null)
   {
     if ($slug !== null) {
       $page = Page::findBySlug($slug);

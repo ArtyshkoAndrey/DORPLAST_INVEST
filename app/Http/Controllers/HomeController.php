@@ -15,18 +15,18 @@ class HomeController extends Controller
    * Index Home Page
    * @return Factory|View|Application
    */
-  public function index(): Factory|View|Application
+  public function index()
   {
     return view('users.index');
   }
 
-  public function products (int $id): Factory|View|Application
+  public function products(int $id)
   {
     $product = Product::find($id);
     return view('users.product', compact('product'));
   }
 
-  public function news (int $id): Factory|View|Application
+  public function news(int $id)
   {
     $news = Newses::find($id);
     return view('users.news', compact('news'));
