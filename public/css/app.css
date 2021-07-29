@@ -12126,6 +12126,36 @@ section.section-landing:first-of-type {
   border-radius: 16px;
 }
 
+#whatsapp {
+  bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#whatsapp #wrapper-ico {
+  cursor: pointer;
+  background-color: #25D366;
+}
+#whatsapp span {
+  cursor: pointer;
+  background-color: #1d1d1b !important;
+  display: block;
+  position: relative;
+}
+#whatsapp span:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  background: #1d1d1b;
+  transform: rotate(45deg);
+  right: -7px;
+  bottom: 8px;
+  border-radius: 4px;
+}
+
 /*!
  * Copyright (c) 2021.
  * All code files are the property of the Fulliton Creator.

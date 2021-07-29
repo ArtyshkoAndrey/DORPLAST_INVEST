@@ -632,6 +632,19 @@
     </div>
   </section>
 
+  <div class="container-md position-fixed" id="whatsapp">
+    <div class="row justify-content-end align-items-center">
+      <div class="col-auto" onclick="window.location = '{{ \Backpack\Settings\app\Models\Setting::get('whatsapp') }}'">
+        <span class="badge bg-secondary px-4 py-3" style="font-size: 12px; font-weight: 400">Пишите! Мы на связи</span>
+      </div>
+      <div class="col-auto">
+        <div class="d-block p-4 rounded-circle" id="wrapper-ico"  onclick="window.location = '{{ \Backpack\Settings\app\Models\Setting::get('whatsapp') }}'">
+          <img src="{{ asset('img/phone_internet.svg') }}" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
 @endsection
 
 @section('js')
